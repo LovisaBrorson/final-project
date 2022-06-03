@@ -1,0 +1,138 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+body {
+  margin: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Red Hat Mono", monospace;
+}
+
+.date {
+  font-style: italic;
+}
+
+.container {
+  margin: 50px auto;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.thoughts-card,
+.form-card {
+  border: 1px solid;
+  padding: 20px;
+  box-shadow: 8px 8px 0px 0px #000000;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* ----- FORM AREA ----- */
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-heading {
+  font-size: 20px;
+}
+
+.textarea {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.caracters-left {
+  margin-top: 5px;
+  font-size: 10px;
+  color: gray;
+}
+
+.thoughts-message {
+  overflow-wrap: break-word;
+}
+
+/* ----- THE BEATING BUTTON ----- */
+
+.heart-beat {
+  height: 30px;
+  cursor: pointer;
+  background-color: pink;
+  border-radius: 25px;
+}
+
+.read-heart {
+  color: red;
+}
+
+.heart-beat {
+  animation: heartbeat 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* ----- THOUGHTS AREA ----- */
+
+.likesWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.button-and-like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.heart-button {
+  border-radius: 50%;
+  margin-right: 5px;
+  color: red;
+  background-color: pink;
+  width: 30px;
+  height: 30px;
+}
+
+.numberOfLikes {
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+}
