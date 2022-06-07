@@ -9,35 +9,6 @@ body {
   font-family: "Red Hat Mono", monospace;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  margin-left: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px 0 20px;
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-a.active {
-  color: red;
-}
-
-/* ALLT NEDAN ÄR CSS FÖR GUESTBOOK */
-
 .date {
   font-style: italic;
 }

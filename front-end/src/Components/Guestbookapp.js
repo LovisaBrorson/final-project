@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { API_URL } from "../utils/urls"
 import { ThoughtForm } from "./thoughtForm"
 import { ThoughtItem } from "./thoughtItem"
+//import "./guestbook.css"
 
 export const Guestbookapp = () => {
   const [thoughts, setThoughts] = useState([])

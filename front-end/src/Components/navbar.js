@@ -1,16 +1,32 @@
 import React from "react"
+import { Link, NavLink } from "react-router-dom"
 
 export const Navbar = () => {
   return (
     <nav>
-      <h1>Börje Brorson</h1>
+      <h1>
+        <Link to='/'>Börje Brorson</Link>
+      </h1>
 
       <ul>
-        <li>Kontakt</li>
-        <li>Om Börje</li>
-        <li>utställningar</li>
-        <li>Galleri</li>
-        <li>Gästbok</li>
+        <li>
+          <NavLink to='/'>Hem</NavLink>
+        </li>
+        <li>
+          <NavLink to='/contact'>Kontakt</NavLink>
+        </li>
+        <li>
+          <NavLink to='/info'>Om Börje</NavLink>
+        </li>
+        <li>
+          <NavLink to='/exhibitions'>Utsällningar</NavLink>
+        </li>
+        <li>
+          <NavLink to='/gallery'>Galleri</NavLink>
+        </li>
+        <li>
+          <NavLink to='/guestbook'>Gästbok</NavLink>
+        </li>
       </ul>
     </nav>
   )
