@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Router, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import { Exhibitions } from "./components/exhibition"
 import { Contact } from "./components/contact"
@@ -16,28 +16,19 @@ export const App = () => {
         <main>
           <Navbar />
 
-          <Router>
-            <Route path='/' exact>
-              <Welcome />
-            </Route>
-            <Route path='/contact' exact>
-              <Contact />
-            </Route>
-            <Route path='/info' exact>
-              <Info />
-            </Route>
+          <Routes>
+            <Route path='/' element={<Welcome />} />
 
-            <Route path='/gallery' exact>
-              <Gallery />
-            </Route>
+            <Route path='/contact' element={<Contact />} />
 
-            <Route path='/exhibitions' exact>
-              <Exhibitions />
-            </Route>
-            <Route path='/guestbook' exact>
-              <Guestbookapp />
-            </Route>
-          </Router>
+            <Route path='/info' element={<Info />} />
+
+            <Route path='/gallery' element={<Gallery />} />
+
+            <Route path='/exhibitions' element={<Exhibitions />} />
+
+            <Route path='/guestbook' element={<Guestbookapp />} />
+          </Routes>
         </main>
       </>
     </BrowserRouter>
