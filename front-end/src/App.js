@@ -1,5 +1,5 @@
 import React from "react"
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import { Exhibitions } from "./components/exhibition"
 import { Contact } from "./components/contact"
@@ -8,31 +8,34 @@ import { Info } from "./components/infoaboutBorje"
 import { Navbar } from "./components/navbar"
 import { Welcome } from "./components/welcome"
 import Guestbookapp from "./components/guestbookapp"
+import NotFond from "./components/notfond"
 
 export const App = () => {
   return (
     <BrowserRouter>
-      <>
-        <main>
-          <Navbar />
+      <Navbar />
 
-          <Routes>
-            <Route path='/' element={<Welcome />} />
+      <Routes>
+        <Route path='/404' element={<NotFond />} />
 
-            <Route path='/contact' element={<Contact />} />
+        <Route path='/' element={<Welcome />} />
 
-            <Route path='/info' element={<Info />} />
+        <Route path='/contact' element={<Contact />} />
 
-            <Route path='/gallery' element={<Gallery />} />
+        <Route path='/info' element={<Info />} />
 
-            <Route path='/exhibitions' element={<Exhibitions />} />
+        <Route path='/gallery' element={<Gallery />} />
 
-            <Route path='/guestbook' element={<Guestbookapp />} />
-          </Routes>
-        </main>
-      </>
+        <Route path='/exhibitions' element={<Exhibitions />} />
+
+        <Route path='/guestbook' element={<Guestbookapp />} />
+      </Routes>
     </BrowserRouter>
   )
 }
+
+// export const App = () => {
+//   return <div>Hello</div>
+// }
 
 export default App
