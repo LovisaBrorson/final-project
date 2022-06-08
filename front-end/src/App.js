@@ -1,6 +1,8 @@
 import React from "react"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 
+import "./guestbook.css"
+
 import { Exhibitions } from "./components/exhibition"
 import { Contact } from "./components/contact"
 import { Gallery } from "./components/gallery"
