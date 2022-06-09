@@ -92,6 +92,12 @@ a.active {
   position: relative;
 }
 
+/* THIS IS THE CSS FOR THE INFO ABOUT BORJE PAGE */
+
+.Img-Borje_Brorson_summer {
+  height: 50%;
+}
+
 /* ------- TABLET ------- */
 
 @media screen and (min-width: 768px) {

@@ -1,11 +1,13 @@
 import React from "react"
+import pic from "../assets/Borje_Brorson_summer.jpg"
 
 export const Info = () => {
   return (
     <article>
       <div className='wrapper'>
         <h1>Om Börje</h1>
-        <p>En bild på pappa</p>
+        <img src={pic} alt='Pic Borje' className='Img-Borje_Brorson_summer' />
+
         <p>
           Lorem ipsum dolor sit amet. Et tempora ratione 33 odit molestiae sed
           repellendus similique et nostrum aliquid est maiores ipsam. Qui
