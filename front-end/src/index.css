@@ -15,6 +15,43 @@ article {
   width: 80%;
 }
 
+.wrapper {
+  /* border: solid black 3px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* THIS IS THE CSS FOR CONTACT */
+
+.phone {
+  background-image: url(./assets/telefonlur-2.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+/* .instagram-logo {
+  background-image: url(./assets/instagram-logga.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 140px;
+  width: 100%;
+  height: 100%;
+} */
+
+.contact-text {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+}
+
 /* THIS IS THE CSS FOR THE NAVBAR */
 
 ul {
@@ -54,4 +91,41 @@ a.active {
   width: 100%;
   height: 25rem;
   position: relative;
+}
+
+/* ------- TABLET ------- */
+
+@media screen and (min-width: 768px) {
+  /* THIS IS THE CSS FOR CONTACT */
+
+  .phone {
+    left: 30px;
+  }
+
+  .instagram-logo {
+    left: 715px;
+  }
+
+  .contact-text {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    font-size: 120%;
+  }
+}
+
+/* ------- LAPTOP ------- */
+
+@media screen and (min-width: 1024px) {
+  /* THIS IS THE CSS FOR CONTACT */
+
+  .instagram-logo {
+    top: 4px;
+    left: 140px;
+  }
+
+  .contact-text {
+    top: 30%;
+    left: 45%;
+  }
 }
