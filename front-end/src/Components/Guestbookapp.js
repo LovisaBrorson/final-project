@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { API_URL } from "../utils/urls"
-import { ThoughtForm } from "./thoughtForm"
-import { ThoughtItem } from "./thoughtItem"
+import { ThoughtForm } from "./ThoughtForm"
+import { ThoughtItem } from "./ThoughtItem"
 //import "./guestbook.css"
 
 export const Guestbookapp = () => {

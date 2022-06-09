@@ -3,14 +3,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import "./guestbook.css"
 
-import { Exhibitions } from "./components/exhibition"
-import { Contact } from "./components/contact"
-import { Gallery } from "./components/gallery"
-import { Info } from "./components/infoaboutBorje"
-import { Navbar } from "./components/navbar"
-import { Welcome } from "./components/welcome"
-import Guestbookapp from "./components/guestbookapp"
-import NotFond from "./components/notfond"
+import { Exhibitions } from "./components/Exhibition"
+import { Contact } from "./components/Contact"
+import { Gallery } from "./components/Gallery"
+import { Info } from "./components/InfoaboutBorje"
+import { Navbar } from "./components/Navbar"
+import { Welcome } from "./components/Welcome"
+import Guestbookapp from "./components/Guestbookapp"
+import NotFond from "./components/Notfond"
 
 export const App = () => {
   return (

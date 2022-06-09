@@ -8,12 +8,12 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
 
   a {
-    color: #fff;
+    color: black;
     text-decoration: none;
   }
 
   a.active {
-    color: red;
+    color: blue;
   }
 
   li {
@@ -32,6 +32,7 @@ const Ul = styled.ul`
     height: 100vh;
     width: 300px;
     padding-top: 3.5rem;
+    transition: transform 0.3s ease-in-out;
  
     
    

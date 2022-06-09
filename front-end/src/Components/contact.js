@@ -3,9 +3,10 @@ import React from "react"
 export const Contact = () => {
   return (
     <article>
+      <div className='instagram-logo'></div>
       <div className='wrapper'>
         <div className='phone'></div>
-        <div className='instagram-logo'></div>
+
         <div className='contact-text'>
           <h1>Kontakta Börje</h1>
           <p>Telefon: 0322-661064 </p>
