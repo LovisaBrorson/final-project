@@ -26,8 +26,8 @@ article {
 /* THIS IS THE CSS FOR CONTACT */
 
 .phone {
-  background-image: url(./assets/telefonlur-2.jpg);
-  width: 100%;
+  /* background-image: url(./assets/telefonlur-2.jpg); */
+  /* width: 100%; */
   height: 100%;
   position: absolute;
   background-repeat: no-repeat;
@@ -82,8 +82,7 @@ a.active {
 
 /* THIS IS THE CSS FOR THE HEADER-PICTURE */
 
-.header-picuter {
-  background-image: url(./assets/Borje-paints-1.jpg);
+.header_img {
   background-size: cover;
   background-position-y: 40%;
   background-repeat: no-repeat;
