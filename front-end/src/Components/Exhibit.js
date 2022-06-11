@@ -1,6 +1,6 @@
 import React from "react"
 
-export const Exhibition = () => {
+export const Exhibit = () => {
   return (
     <article>
       <div className='wrapper'>

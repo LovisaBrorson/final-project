@@ -47,7 +47,7 @@ export const RightNav = ({ open }) => {
         <NavLink to='/info'>Om Börje</NavLink>
       </li>
       <li>
-        <NavLink to='/exhibition'>Utsällningar</NavLink>
+        <NavLink to='/exhibit'>Utsällningar</NavLink>
       </li>
       <li>
         <NavLink to='/gallery'>Galleri</NavLink>
