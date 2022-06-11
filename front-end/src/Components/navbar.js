@@ -29,26 +29,6 @@ export const Navbar = () => {
         </h1>
       </div>
       <Burger />
-      {/* <ul>
-        <li>
-          <NavLink to='/'>Hem</NavLink>
-        </li>
-        <li>
-          <NavLink to='/contact'>Kontakt</NavLink>
-        </li>
-        <li>
-          <NavLink to='/info'>Om Börje</NavLink>
-        </li>
-        <li>
-          <NavLink to='/exhibitions'>Utsällningar</NavLink>
-        </li>
-        <li>
-          <NavLink to='/gallery'>Galleri</NavLink>
-        </li>
-        <li>
-          <NavLink to='/guestbook'>Gästbok</NavLink>
-        </li>
-      </ul> */}
     </Nav>
   )
 }
