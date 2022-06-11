@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react"
 import { API_URL } from "../utils/urls"
-import { ThoughtForm } from "./ThoughtForm"
-import { ThoughtItem } from "./ThoughtItem"
-//import "./guestbook.css"
+import { GreetingForm } from "./GreetingForm"
+import { GreetingItem } from "./GreetingItem"
 
 export const Guestbookapp = () => {
-  const [thoughts, setThoughts] = useState([])
-  const [newThought, setNewThought] = useState("")
+  const [greetings, setGreetings] = useState([])
+  const [newGreeting, setNewGreeting] = useState("")
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -19,7 +18,7 @@ export const Guestbookapp = () => {
     setLoading(true)
     const response = await fetch(API_URL)
     const data = await response.json()
-    setThoughts(data)
+    setGreetings(data)
     console.log(data)
     setLoading(false)
   }
@@ -32,27 +31,27 @@ export const Guestbookapp = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ message: newThought }),
+      body: JSON.stringify({ message: newGreeting }),
     }
 
     fetch(API_URL, options)
       .then((res) => res.json())
-      .then((data) => setThoughts([data.response, ...thoughts]))
-      .finally(() => setNewThought(""))
+      .then((data) => setGreetings([data.response, ...greetings]))
+      .finally(() => setNewGreeting(""))
   }
 
-  const handleLikeIncrease = (thoughtId) => {
+  const handleLikeIncrease = (greetingId) => {
     const options = {
       method: "POST",
     }
     fetch(
-      `https://happythoughts-api-lovisa.herokuapp.com/thoughts/${thoughtId}/like`,
+      `https://happythoughts-api-lovisa.herokuapp.com/greetings/${greetingId}/like`,
       options
     )
-      //fetch(`https://happy-thoughts-technigo.herokuapp.com/thoughts/${thoughtId}/like`, options)
+      //fetch(`https://happy-greetings-technigo.herokuapp.com/greetings/${thoughtId}/like`, options)
       .then((res) => res.json())
       .then((data) => {
-        const updatedThoughts = thoughts.map((item) => {
+        const updatedGreetings = greetings.map((item) => {
           if (item._id === data.response._id) {
             item.hearts = Number(item.hearts) + 1
             return item
@@ -60,23 +59,23 @@ export const Guestbookapp = () => {
             return item
           }
         })
-        setThoughts(updatedThoughts)
+        setGreetings(updatedGreetings)
       })
   }
 
   return (
     <div className='container'>
-      <ThoughtForm
+      <GreetingForm
         onFormSubmit={handleFormSubmit}
-        newThought={newThought}
-        setNewThought={setNewThought}
+        newGreeting={newGreeting}
+        setNewGreeting={setNewGreeting}
       />
 
       {!loading &&
-        thoughts.map((thought) => (
-          <ThoughtItem
-            key={thought?._id}
-            thought={thought}
+        greetings.map((greeting) => (
+          <GreetingItem
+            key={greeting?._id}
+            thought={greeting}
             onLikeIncrease={handleLikeIncrease}
           />
         ))}
@@ -85,3 +84,90 @@ export const Guestbookapp = () => {
 }
 
 export default Guestbookapp
+
+// import React, { useEffect, useState } from "react"
+// import { API_URL } from "../utils/urls"
+// import { ThoughtForm } from "./ThoughtForm"
+// import { ThoughtItem } from "./ThoughtItem"
+
+// export const Guestbookapp = () => {
+//   const [greetings, setGreetings] = useState([])
+//   const [newGreeting, setNewGreeting] = useState("")
+//   const [loading, setLoading] = useState(true)
+
+//   useEffect(() => {
+//     if (loading) {
+//       fetchTexts()
+//     }
+//   }, [loading])
+
+//   const fetchTexts = async () => {
+//     setLoading(true)
+//     const response = await fetch(API_URL)
+//     const data = await response.json()
+//     setGreetings(data)
+//     console.log(data)
+//     setLoading(false)
+//   }
+
+//   const handleFormSubmit = (event) => {
+//     event.preventDefault()
+
+//     const options = {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify({ message: newGreeting }),
+//     }
+
+//     fetch(API_URL, options)
+//       .then((res) => res.json())
+//       .then((data) => setGreetings([data.response, ...greetings]))
+//       .finally(() => setNewGreeting(""))
+//   }
+
+//   const handleLikeIncrease = (thoughtId) => {
+//     const options = {
+//       method: "POST",
+//     }
+//     fetch(
+//       `https://happythoughts-api-lovisa.herokuapp.com/greetings/${thoughtId}/like`,
+//       options
+//     )
+//       //fetch(`https://happy-greetings-technigo.herokuapp.com/greetings/${thoughtId}/like`, options)
+//       .then((res) => res.json())
+//       .then((data) => {
+//         const updatedThoughts = greetings.map((item) => {
+//           if (item._id === data.response._id) {
+//             item.hearts = Number(item.hearts) + 1
+//             return item
+//           } else {
+//             return item
+//           }
+//         })
+//         setGreetings(updatedThoughts)
+//       })
+//   }
+
+//   return (
+//     <div className='container'>
+//       <ThoughtForm
+//         onFormSubmit={handleFormSubmit}
+//         newGreeting={newGreeting}
+//         setNewGreeting={setNewGreeting}
+//       />
+
+//       {!loading &&
+//         greetings.map((thought) => (
+//           <ThoughtItem
+//             key={thought?._id}
+//             thought={thought}
+//             onLikeIncrease={handleLikeIncrease}
+//           />
+//         ))}
+//     </div>
+//   )
+// }
+
+// export default Guestbookapp

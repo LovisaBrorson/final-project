@@ -11,7 +11,7 @@ mongoose.Promise = Promise
 const port = process.env.PORT || 8080
 const app = express()
 
-const ThoughtSchema = new mongoose.Schema({
+const GreetingSchema = new mongoose.Schema({
   message: {
     type: String,
     required: true,
@@ -29,23 +29,23 @@ const ThoughtSchema = new mongoose.Schema({
   },
 })
 
-const Thought = mongoose.model("Thought", ThoughtSchema)
+const Greeting = mongoose.model("Greeting", GreetingSchema)
 
 app.use(cors())
 app.use(express.json())
 
 //THE ROUTES
 app.get("/", (req, res) => {
-  res.send("Här ska byggas backend, tjohoo!")
+  res.send("Backend - Börje Brorson")
 })
 
-app.get("/thoughts", async (req, res) => {
+app.get("/greetings", async (req, res) => {
   try {
-    const thoughts = await Thought.find()
+    const greetings = await Greeting.find()
       .sort({ createdAt: "desc" })
       .limit(40)
       .exec()
-    res.status(200).json(thoughts)
+    res.status(200).json(greetings)
   } catch (error) {
     res.status(400).json({
       response: error,
@@ -54,21 +54,21 @@ app.get("/thoughts", async (req, res) => {
   }
 })
 
-app.post("/thoughts", async (req, res) => {
+app.post("/greetings", async (req, res) => {
   const { message } = req.body
   try {
-    const newThought = await new Thought({ message }).save()
-    res.status(201).json({ response: newThought, success: true })
+    const newGreeting = await new Greeting({ message }).save()
+    res.status(201).json({ response: newGreeting, success: true })
   } catch (error) {
     res.status(400).json({ response: error, success: false })
   }
 })
 
-app.post("/thoughts/:thoughtId/like", async (req, res) => {
-  const { thoughtId } = req.params
+app.post("/greetings/:greetingId/like", async (req, res) => {
+  const { greetingId } = req.params
   try {
-    const updatedThought = await Thought.findByIdAndUpdate(
-      thoughtId,
+    const updatedGreeting = await Greeting.findByIdAndUpdate(
+      greetingId,
       {
         $inc: {
           hearts: 1,
@@ -78,7 +78,7 @@ app.post("/thoughts/:thoughtId/like", async (req, res) => {
         new: true,
       }
     )
-    res.status(200).json({ response: updatedThought, success: true })
+    res.status(200).json({ response: updatedGreeting, success: true })
   } catch (error) {
     res.status(400).json({ response: error, success: false })
   }

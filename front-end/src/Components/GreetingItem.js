@@ -1,23 +1,23 @@
 import React from "react"
 import moment from "moment"
 
-export const ThoughtItem = ({ thought, onLikeIncrease }) => {
+export const GreetingItem = ({ greeting, onLikeIncrease }) => {
   return (
     <div className='thoughts-card'>
-      <p className='thoughts-message'> {thought.message} </p>
+      <p className='thoughts-message'> {greeting.message} </p>
 
       <div className='likesWrapper'>
         <div className='button-and-like'>
           <button
-            onClick={() => onLikeIncrease(thought._id)}
+            onClick={() => onLikeIncrease(greeting._id)}
             className='heart-button'
           >
             {""}
             <span>&hearts;</span>
           </button>
-          <p className='numberOfLikes'> x {thought.hearts} </p>
+          <p className='numberOfLikes'> x {greeting.hearts} </p>
         </div>
-        <p className='date'> {moment(thought.createdAt).fromNow()}</p>
+        <p className='date'> {moment(greeting.createdAt).fromNow()}</p>
       </div>
     </div>
   )
