@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 
 import "./guestbook.css"
 
-import { Exhibitions } from "./components/Exhibition"
+import { Exhibition } from "./components/Exhibition"
 import { Contact } from "./components/Contact"
 import { Gallery } from "./components/Gallery"
 import { Info } from "./components/InfoaboutBorje"
@@ -28,7 +28,7 @@ export const App = () => {
 
         <Route path='/gallery' element={<Gallery />} />
 
-        <Route path='/exhibitions' element={<Exhibitions />} />
+        <Route path='/exhibition' element={<Exhibition />} />
 
         <Route path='/guestbook' element={<Guestbookapp />} />
       </Routes>
