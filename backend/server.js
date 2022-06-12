@@ -15,7 +15,6 @@ const GreetingSchema = new mongoose.Schema({
   message: {
     type: String,
     required: true,
-    minlength: 5,
     maxlength: 200,
     trim: true,
   },
@@ -41,7 +40,7 @@ app.get("/", (req, res) => {
 
 app.get("/greetings", async (req, res) => {
   try {
-    const greetings = await Greeting.find()
+    const greetings = await Greeting.find({})
       .sort({ createdAt: "desc" })
       .limit(40)
       .exec()
@@ -58,6 +57,7 @@ app.post("/greetings", async (req, res) => {
   const { message } = req.body
   try {
     const newGreeting = await new Greeting({ message }).save()
+
     res.status(201).json({ response: newGreeting, success: true })
   } catch (error) {
     res.status(400).json({ response: error, success: false })

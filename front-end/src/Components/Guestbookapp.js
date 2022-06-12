@@ -19,12 +19,12 @@ export const Guestbookapp = () => {
     const response = await fetch(API_URL)
     const data = await response.json()
     setGreetings(data)
-    console.log(data)
     setLoading(false)
   }
 
   const handleFormSubmit = (event) => {
     event.preventDefault()
+    setLoading(false)
 
     const options = {
       method: "POST",
@@ -34,10 +34,12 @@ export const Guestbookapp = () => {
       body: JSON.stringify({ message: newGreeting }),
     }
 
-    fetch(API_URL, options)
+    fetch("http://localhost:8080/greetings", options)
       .then((res) => res.json())
-      .then((data) => setGreetings([data.response, ...greetings]))
-      .finally(() => setNewGreeting(""))
+      .then((data) => setGreetings((prev) => [...prev, data.response]))
+      .finally(() => {
+        setNewGreeting("")
+      })
   }
 
   const handleLikeIncrease = (greetingId) => {
@@ -75,7 +77,7 @@ export const Guestbookapp = () => {
         greetings.map((greeting) => (
           <GreetingItem
             key={greeting?._id}
-            thought={greeting}
+            greeting={greeting}
             onLikeIncrease={handleLikeIncrease}
           />
         ))}
