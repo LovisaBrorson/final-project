@@ -14,6 +14,7 @@ const Ul = styled.ul`
 
   a.active {
     color: blue;
+    text-decoration: none;
   }
 
   li {
@@ -38,22 +39,22 @@ export const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <NavLink to='/'>Hem</NavLink>
+        <NavLink to='/'>HEM</NavLink>
       </li>
       <li>
-        <NavLink to='/contact'>Kontakt</NavLink>
+        <NavLink to='/guestbook'>GÄSTBOK</NavLink>
       </li>
       <li>
-        <NavLink to='/info'>Om Börje</NavLink>
+        <NavLink to='/contact'>KONTAKT</NavLink>
       </li>
       <li>
-        <NavLink to='/exhibit'>Utsällningar</NavLink>
+        <NavLink to='/info'>OM BÖRJE</NavLink>
       </li>
       <li>
-        <NavLink to='/gallery'>Galleri</NavLink>
+        <NavLink to='/exhibit'>UTSTÄLLNINGAR</NavLink>
       </li>
       <li>
-        <NavLink to='/guestbook'>Gästbok</NavLink>
+        <NavLink to='/gallery'>GALLERI</NavLink>
       </li>
     </Ul>
   )
