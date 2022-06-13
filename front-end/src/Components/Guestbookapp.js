@@ -36,7 +36,7 @@ export const Guestbookapp = () => {
 
     fetch(API_URL, options)
       .then((res) => res.json())
-      .then((data) => setGreetings((prev) => [...prev, data.response]))
+      .then((data) => setGreetings((prev) => [data.response, ...prev]))
       .finally(() => {
         setNewGreeting("")
       })
