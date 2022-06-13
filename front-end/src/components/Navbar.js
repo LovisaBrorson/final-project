@@ -12,11 +12,10 @@ const Nav = styled.nav`
   background-color: #b4cfb0;
 
   h1 {
-    font-size: 55px;
+    font-size: 40px;
     font-family: "Imperial Script", cursive;
-    margin: 16px;
+    margin: 27px;
     font-weight: 700;
-    padding-left: 55px;
   }
 
   a {
@@ -29,13 +28,26 @@ const Nav = styled.nav`
   }
 
   li {
-    padding: 50px 10px;
+    padding: 0px 10px;
     font-size: 20px;
-    padding-right: 30px;
+    padding-right: 20px;
+    letter-spacing: 0.02em;
   }
 
   li:last-of-type {
     padding-right: 55px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 55px;
+
+    h1 {
+      margin-top: 25px;
+    }
   }
 `
 
