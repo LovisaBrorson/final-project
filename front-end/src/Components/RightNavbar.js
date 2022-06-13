@@ -20,6 +20,7 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
     font-size: 20px;
+    padding-right: 30px;
   }
 
   @media (max-width: 768px) {
