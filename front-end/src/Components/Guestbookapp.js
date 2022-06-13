@@ -34,7 +34,7 @@ export const Guestbookapp = () => {
       body: JSON.stringify({ message: newGreeting }),
     }
 
-    fetch("http://localhost:8080/greetings", options)
+    fetch(API_URL, options)
       .then((res) => res.json())
       .then((data) => setGreetings((prev) => [...prev, data.response]))
       .finally(() => {
@@ -47,7 +47,7 @@ export const Guestbookapp = () => {
       method: "POST",
     }
     fetch(
-      `https://happythoughts-api-lovisa.herokuapp.com/greetings/${greetingId}/like`,
+      `https://borjebrorson.herokuapp.com/greetings/${greetingId}/like`,
       options
     )
       //fetch(`https://happy-greetings-technigo.herokuapp.com/greetings/${thoughtId}/like`, options)

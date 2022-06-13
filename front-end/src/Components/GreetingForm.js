@@ -22,8 +22,8 @@ export const GreetingForm = ({ onFormSubmit, newGreeting, setNewGreeting }) => {
           type='submit'
           className='heart-beat'
         >
-          <span className='read-heart'>❤</span>
-          {""} Sänd hälsning <span className='read-heart'>❤</span>
+          <span className='read-heart'></span>
+          {""} Sänd hälsning <span className='read-heart'></span>
           {""}
         </button>
         <span className='caracters-left'>

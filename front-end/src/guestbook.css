@@ -69,7 +69,7 @@ form {
   color: red;
 }
 
-.heart-beat {
+/* .heart-beat {
   animation: heartbeat 2s;
   animation-iteration-count: infinite;
 }
@@ -84,7 +84,7 @@ form {
   100% {
     transform: scale(1);
   }
-}
+} */
 
 /* ----- THOUGHTS AREA ----- */
 
