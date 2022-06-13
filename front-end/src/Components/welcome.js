@@ -1,16 +1,18 @@
 import React from "react"
-//import header_img from "../assets/Borje-paints-1.jpg"
+import header_img from "../assets/borje_header_1.jpg"
 
 window.alert("Den här sidan använder små goda kakor 🍪")
 
 export const Welcome = () => {
   return (
     <div>
-      {/* <img
-        src={header_img}
-        alt='Borje in hat and sunshades'
-        className='header_img'
-      /> */}
+      <div className='header_container'>
+        <img
+          src={header_img}
+          alt='Borje infront of his desk, painting.'
+          className='header_img'
+        />
+      </div>
       <article>
         <p>
           HÄR ÄR BÖRJE! Lorem ipsum dolor sit amet. Aut quisquam deleniti qui

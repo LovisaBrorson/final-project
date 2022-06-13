@@ -6,10 +6,11 @@ import { Burger } from "./Burger"
 const Nav = styled.nav`
   width: 100%;
   height: 100px;
-  border-bottom: 2px solid #f1f1f1;
+  // border-bottom: 2px solid #f1f1f1;
   display: flex;
   justify-content: space-between;
   background-color: #b4cfb0;
+  margin: 0;
 
   h1 {
     font-size: 40px;
@@ -38,13 +39,8 @@ const Nav = styled.nav`
     padding-right: 55px;
   }
 
-  @media (min-width: 768px) {
-    font-size: 45px;
-  }
-
   @media (min-width: 1024px) {
-    padding-left: 55px;
-
+    font-size: 40px;
     h1 {
       margin-top: 25px;
     }

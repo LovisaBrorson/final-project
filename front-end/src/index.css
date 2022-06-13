@@ -71,23 +71,19 @@ li {
   color: #555;
 } */
 
-/* a {
-  color: blue;
-  text-decoration: none;
-}
-
-a.active {
-  color: red;
-} */
-
 /* THIS IS THE CSS FOR THE HEADER-PICTURE */
 
 .header_img {
-  background-size: cover;
-  background-position-y: 40%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 25rem;
+  position: absolute;
+  top: -30px;
+  /* z-index: 25; */
+}
+
+.header_container {
+  overflow: hidden;
+  height: 200px;
   position: relative;
 }
 
@@ -97,9 +93,26 @@ a.active {
   height: 50%;
 }
 
+/* CSS FOR THE HEADER IMG THAT NEED TO CHANGE MANY TIMES TO LOOK GOOD */
+
+@media screen and (min-width: 425px) {
+  .header_img {
+    top: -45px;
+  }
+}
 /* ------- TABLET ------- */
 
 @media screen and (min-width: 768px) {
+  /* THIS IS THE CSS FOR THE HEADER-PICTURE */
+
+  .header_img {
+    top: -135px;
+  }
+
+  .header_container {
+    height: 250px;
+  }
+
   /* THIS IS THE CSS FOR CONTACT */
 
   .phone {
@@ -121,6 +134,16 @@ a.active {
 /* ------- LAPTOP ------- */
 
 @media screen and (min-width: 1024px) {
+  /* THIS IS THE CSS FOR THE HEADER-PICTURE */
+
+  .header_img {
+    top: -200px;
+  }
+
+  .header_container {
+    height: 300px;
+  }
+
   /* THIS IS THE CSS FOR CONTACT */
 
   .instagram-logo {
@@ -131,5 +154,17 @@ a.active {
   .contact-text {
     top: 30%;
     left: 45%;
+  }
+}
+
+/* LAGER SCREEN FOR THE HEADER */
+
+@media screen and (min-width: 1200px) {
+  .header_img {
+    top: -270px;
+  }
+
+  .header_container {
+    height: 350px;
   }
 }
