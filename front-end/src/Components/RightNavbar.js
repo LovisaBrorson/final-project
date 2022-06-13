@@ -8,17 +8,18 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
 
   a {
-    color: black;
+    color: #66806a;
     text-decoration: none;
   }
 
   a.active {
-    color: blue;
-    text-decoration: none;
+    color: #525e75;
+    font-weight: 700;
   }
 
   li {
     padding: 18px 10px;
+    font-size: 20px;
   }
 
   @media (max-width: 768px) {

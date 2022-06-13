@@ -11,19 +11,22 @@ const Nav = styled.nav`
   justify-content: space-between;
   padding-left: 55px;
   padding-right: 55px;
+  background-color: #b4cfb0;
 
   h1 {
-    font-size: 35px;
+    font-size: 55px;
     font-family: "Imperial Script", cursive;
+    margin: 8px;
+    font-weight: 700;
   }
 
   a {
-    color: black;
+    color: #66806a;
     text-decoration: none;
   }
 
   a.active {
-    color: blue;
+    color: #525e75;
   }
 `
 
