@@ -30,6 +30,7 @@ article {
   position: absolute;
   background-repeat: no-repeat;
   background-position-y: center;
+  z-index: -1;
 }
 
 /* .instagram-logo {
@@ -46,6 +47,7 @@ article {
   position: absolute;
   top: 15%;
   left: 20%;
+  z-index: -1;
 }
 
 /* THIS IS THE CSS FOR THE NAVBAR */
@@ -92,7 +94,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   position: relative;
   margin-top: 25px;
 }
@@ -105,6 +106,7 @@ p {
 .welcome-text-span {
   font-size: large;
   font-weight: 600;
+  z-index: -1;
 }
 
 .painting-welcomepage {
@@ -113,12 +115,13 @@ p {
   align-items: center;
   flex-direction: column;
   margin-top: 25px;
+  z-index: -1;
 }
 
 .goToGalleryButton {
   position: relative;
   padding: 5px 20px;
-  margin: 12px 5px 5px 0px;
+  margin: 20px 5px 40px 0px;
   float: left;
   border-radius: 3px;
   font-size: 10px;
@@ -126,10 +129,11 @@ p {
   text-decoration: none;
   background-color: #66806a;
   border: none;
-  border-bottom: 3px solid #b4cfb0;
+  border-bottom: 3px solid #5d6e5f;
   /* text-shadow: 0px -2px #b4cfb0; */
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  z-index: -1;
 }
 
 .goToGalleryButton:hover,
@@ -137,13 +141,14 @@ p {
   -webkit-transform: translate(0px, 5px);
   -ms-transform: translate(0px, 5px);
   transform: translate(0px, 5px);
-  border-bottom: 1px solid #b4cfb0;
+  border-bottom: 1px solid #5d6e5f;
 }
 
 /* THIS IS THE CSS FOR THE INFO ABOUT BORJE PAGE */
 
 .Img-Borje_Brorson_summer {
   height: 50%;
+  z-index: -1;
 }
 
 /* CSS FOR THE HEADER IMG THAT NEED TO CHANGE MANY TIMES TO LOOK GOOD */
@@ -153,6 +158,8 @@ p {
     top: -45px;
   }
 }
+
+/*////////////////////////*/
 /* ------- TABLET ------- */
 
 @media screen and (min-width: 768px) {
@@ -169,28 +176,10 @@ p {
   /* BUTTOM ON WELCOMEPAGE */
 
   .goToGalleryButton {
-    position: relative;
     padding: 10px 40px;
-    margin: 25px 10px 10px 0px;
-    float: left;
-    border-radius: 3px;
+    margin: 40px 10px 40px 0px;
     font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-    background-color: #66806a;
-    border: none;
-    border-bottom: 5px solid #b4cfb0;
-    /* text-shadow: 0px -2px #b4cfb0; */
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
-  }
-
-  .goToGalleryButton:hover,
-  .goToGalleryButton:active {
-    -webkit-transform: translate(0px, 5px);
-    -ms-transform: translate(0px, 5px);
-    transform: translate(0px, 5px);
-    border-bottom: 1px solid #b4cfb0;
+    border-bottom: 5px solid #5d6e5f;
   }
 
   /* THIS IS THE CSS FOR CONTACT */
@@ -211,6 +200,7 @@ p {
   }
 }
 
+/*////////////////////////*/
 /* ------- LAPTOP ------- */
 
 @media screen and (min-width: 1024px) {
