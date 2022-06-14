@@ -24,6 +24,19 @@ const Ul = styled.ul`
     letter-spacing: 0.02em;
   }
 
+  @media (max-width: 375px) {
+    flex-flow: column nowrap;
+    background-color: #534340;
+    position: fixed;
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 180px;
+    padding-top: 2.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #534340;
