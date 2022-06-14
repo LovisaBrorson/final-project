@@ -117,6 +117,31 @@ p {
   margin-top: 25px;
 }
 
+.gotoGalleryButton {
+  position: relative;
+  padding: 10px 40px;
+  margin: 25px 10px 10px 0px;
+  float: left;
+  border-radius: 3px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #66806a;
+  border: none;
+  border-bottom: 5px solid #b4cfb0;
+  /* text-shadow: 0px -2px #b4cfb0; */
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.gotoGalleryButton:hover,
+.gotoGalleryButton:active {
+  -webkit-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+  transform: translate(0px, 5px);
+  border-bottom: 1px solid #b4cfb0;
+}
+
 /* THIS IS THE CSS FOR THE INFO ABOUT BORJE PAGE */
 
 .Img-Borje_Brorson_summer {

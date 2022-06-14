@@ -43,7 +43,9 @@ export const Welcome = () => {
             alt='Children and cows.'
             className='painting-welcomepage'
           />
-          <button onClick={goToGallery}>Till Galleriet</button>
+          <button className='gotoGalleryButton' onClick={goToGallery}>
+            Till Galleriet
+          </button>
         </div>
       </article>
     </div>
