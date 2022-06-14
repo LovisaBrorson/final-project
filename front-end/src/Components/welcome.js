@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useNavigate } from "react-router-dom"
 import header_img from "../assets/borje_header_1.jpg"
 import cow from "../assets/paintings/cow.jpg"
