@@ -6,7 +6,6 @@ import { Burger } from "./Burger"
 const Nav = styled.nav`
   width: 100%;
   height: 100px;
-  // border-bottom: 2px solid #f1f1f1;
   display: flex;
   justify-content: space-between;
   background-color: #b4cfb0;

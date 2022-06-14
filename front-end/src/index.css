@@ -101,12 +101,12 @@ li {
 p {
   max-width: 60ch;
   line-height: 1.6;
+  z-index: -1;
 }
 
 .welcome-text-span {
   font-size: large;
   font-weight: 600;
-  z-index: -1;
 }
 
 .painting-welcomepage {
