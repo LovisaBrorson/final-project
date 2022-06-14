@@ -20,7 +20,6 @@ const Ul = styled.ul`
   li {
     font-size: 20px;
     font-weight: 400;
-    padding-top: 26px;
     letter-spacing: 0.02em;
   }
 
@@ -33,7 +32,7 @@ const Ul = styled.ul`
     right: 0;
     height: 100vh;
     width: 180px;
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -48,6 +47,7 @@ const Ul = styled.ul`
     width: 240px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    margin: 0;
   }
 `
 

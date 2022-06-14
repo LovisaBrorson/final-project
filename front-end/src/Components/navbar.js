@@ -28,10 +28,11 @@ const Nav = styled.nav`
   }
 
   li {
-    padding: 0px 10px;
+    //padding: 0px 10px;
     font-size: 20px;
     padding-right: 20px;
     letter-spacing: 0.02em;
+    margin-bottom: 50px;
   }
 
   li:last-of-type {
@@ -40,9 +41,6 @@ const Nav = styled.nav`
 
   @media (min-width: 1024px) {
     font-size: 40px;
-    h1 {
-      margin-top: 25px;
-    }
   }
 `
 
