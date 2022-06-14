@@ -133,7 +133,6 @@ p {
   /* text-shadow: 0px -2px #b4cfb0; */
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  z-index: -1;
 }
 
 .goToGalleryButton:hover,

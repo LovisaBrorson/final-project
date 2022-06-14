@@ -44,7 +44,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 240px;
+    width: 200px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     margin: 0;
