@@ -14,12 +14,13 @@ export const Welcome = () => {
         />
       </div>
       <article>
-        <p>
-          HÄR ÄR BÖRJE! Lorem ipsum dolor sit amet. Aut quisquam deleniti qui
-          illo voluptas et quia ut adipisci similique. Sed ratione iste et eius
-          voluptatibus At dolorem odit qui illo laudantium eum nemo labore 33
-          dicta voluptas id excepturi perferendis.
-        </p>
+        <div className='wrapper-welcome'>
+          <p>
+            BÖRJE BRORSON är en illustratör och konstnär från Asklanda. I
+            navistisk stil målar han djur och natur och även gårdsmålningar på
+            beställning.
+          </p>
+        </div>
         <p>add picuters</p>
       </article>
     </div>

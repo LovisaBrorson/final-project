@@ -5,7 +5,7 @@ export const Contact = () => {
   return (
     <article>
       <div className='instagram-logo'></div>
-      <div className='wrapper'>
+      <div className='wrapper-contact'>
         <img src={phone} alt='Phone' className='phone' />
 
         <div className='contact-text'>
