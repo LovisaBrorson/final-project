@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import header_img from "../assets/borje_header_1.jpg"
 import cow from "../assets/paintings/cow.jpg"
 import family from "../assets/paintings/family.jpg"
@@ -8,6 +9,11 @@ import man_in_door from "../assets/paintings/man-in-the-door.jpg"
 // window.alert("Den här sidan använder små goda kakor 🍪")
 
 export const Welcome = () => {
+  const navigate = useNavigate()
+  const goToGallery = () => {
+    navigate("/gallery")
+  }
+
   return (
     <div>
       <div className='header_container'>
@@ -37,6 +43,7 @@ export const Welcome = () => {
             alt='Children and cows.'
             className='painting-welcomepage'
           />
+          <button onClick={goToGallery}>Till Galleriet</button>
         </div>
       </article>
     </div>
