@@ -1,7 +1,11 @@
 import React from "react"
 import header_img from "../assets/borje_header_1.jpg"
+import cow from "../assets/paintings/cow.jpg"
+import family from "../assets/paintings/family.jpg"
+import fox from "../assets/paintings/Fox-1.jpg"
+import man_in_door from "../assets/paintings/man-in-the-door.jpg"
 
-window.alert("Den här sidan använder små goda kakor 🍪")
+// window.alert("Den här sidan använder små goda kakor 🍪")
 
 export const Welcome = () => {
   return (
@@ -16,12 +20,24 @@ export const Welcome = () => {
       <article>
         <div className='wrapper-welcome'>
           <p>
-            BÖRJE BRORSON är en illustratör och konstnär från Asklanda. I
-            navistisk stil målar han djur och natur och även gårdsmålningar på
-            beställning.
+            <span className='welcome-text-span'>BÖRJE BRORSON</span> är
+            illustratör och konstnär ifrån Asklanda. I navistisk stil målar han
+            djur och natur och även gårdsmålningar på beställning.
           </p>
+
+          <img
+            src={cow}
+            alt='Children and cows'
+            className='painting-welcomepage'
+          />
+          <img src={family} alt='Family' className='painting-welcomepage' />
+          <img src={fox} alt='Fox' className='painting-welcomepage' />
+          <img
+            src={man_in_door}
+            alt='Children and cows.'
+            className='painting-welcomepage'
+          />
         </div>
-        <p>add picuters</p>
       </article>
     </div>
   )
