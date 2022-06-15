@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { API_URL } from "../utils/urls"
 import { GreetingForm } from "./GreetingForm"
 import { GreetingItem } from "./GreetingItem"
+import Loader from "./Loader"
 
 export const Guestbookapp = () => {
   const [greetings, setGreetings] = useState([])
@@ -67,6 +68,7 @@ export const Guestbookapp = () => {
 
   return (
     <div className='container'>
+      {loading && <Loader />}
       <GreetingForm
         onFormSubmit={handleFormSubmit}
         newGreeting={newGreeting}

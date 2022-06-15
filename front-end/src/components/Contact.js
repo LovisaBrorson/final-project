@@ -6,8 +6,8 @@ export const Contact = () => {
   return (
     <article>
       <div className='wrapper-contact'>
-        <img src={instagram} alt='Phone' className='instagram' />
         <img src={phone} alt='Phone' className='phone' />
+        <img src={instagram} alt='Phone' className='instagram' />
 
         <div className='contact-text'>
           <h1>Kontakta Börje</h1>
