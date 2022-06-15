@@ -24,7 +24,7 @@ const Nav = styled.nav`
   }
 
   a.active {
-    color: #525e75;
+    color: #495469;
   }
 
   li {

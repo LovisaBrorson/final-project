@@ -6,6 +6,7 @@ const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  z-index: 1;
 
   a {
     color: #66806a;
@@ -13,7 +14,7 @@ const Ul = styled.ul`
   }
 
   a.active {
-    color: #525e75;
+    color: #495469;
     font-weight: 700;
   }
 
@@ -23,29 +24,17 @@ const Ul = styled.ul`
     letter-spacing: 0.02em;
   }
 
-  @media (max-width: 375px) {
-    flex-flow: column nowrap;
-    background-color: #534340;
-    position: fixed;
-    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 180px;
-    padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
-  }
-
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #534340;
+    background-color: #4a3c39;
+    // #534340
     position: fixed;
     transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 100vh;
     width: 200px;
-    padding-top: 3.5rem;
+    padding-top: 6rem;
     transition: transform 0.3s ease-in-out;
     margin: 0;
   }
