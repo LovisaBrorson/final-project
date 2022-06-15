@@ -1,9 +1,7 @@
 body {
   margin: 0;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   font-family: "Red Hat Mono", monospace;
 }
 
@@ -19,15 +17,13 @@ body {
   gap: 20px;
 }
 
-.thoughts-card,
+.greeting-card,
 .form-card {
-  border: 1px solid;
   padding: 20px;
-  /* box-shadow: 8px 8px 0px 0px #000000; */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #dae5d0;
 }
 
 /* ----- FORM AREA ----- */
@@ -40,11 +36,14 @@ form {
 
 .form-heading {
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .textarea {
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .caracters-left {
@@ -53,39 +52,20 @@ form {
   color: gray;
 }
 
-.thoughts-message {
+.greeting-message {
   overflow-wrap: break-word;
+  line-height: 1.6;
 }
 
 /* ----- THE BEATING BUTTON ----- */
 
-.heart-beat {
-  height: 30px;
+.send-button {
+  padding: 10px;
   cursor: pointer;
-  background-color: pink;
-  border-radius: 25px;
+  background-color: #66806a;
+  border-radius: 5px;
+  font-family: "Red Hat Mono", monospace;
 }
-
-.read-heart {
-  color: red;
-}
-
-/* .heart-beat {
-  animation: heartbeat 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes heartbeat {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-} */
 
 /* ----- THOUGHTS AREA ----- */
 
@@ -93,7 +73,7 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-between;
 }
 
@@ -105,19 +85,26 @@ form {
 
 .heart-button {
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 8px;
   color: red;
   background-color: pink;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
 }
 
 .numberOfLikes {
-  font-size: 10px;
-  margin-right: 10px;
+  font-size: 13px;
+  font-family: "Red Hat Mono", monospace;
 }
 
 .date {
   font-size: 12px;
   color: gray;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 35%;
+  }
 }

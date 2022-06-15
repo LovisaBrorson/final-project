@@ -38,10 +38,10 @@ article {
   width: 120px;
   height: 120px;
   margin: 8px;
-  border: 12px solid #fff;
+  border: 12px solid #66806a;
   border-radius: 50%;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #fff transparent transparent transparent;
+  border-color: #66806a transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
@@ -237,14 +237,25 @@ li {
   }
 
   .contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     top: 5%;
     left: 35%;
     font-size: 120%;
   }
 
+  /* .contact-text h1 {
+    margin: 0;
+  }
+
+  .contact-text p {
+    margin-top: 10px;
+  } */
+
   .instagram {
-    top: 243px;
-    left: 273px;
+    top: 304px;
+    left: 294px;
     height: 80px;
   }
 }
@@ -270,7 +281,7 @@ li {
   }
 
   .instagram {
-    left: 388px;
+    left: 412px;
   }
 }
 

@@ -28,7 +28,6 @@ const Nav = styled.nav`
   }
 
   li {
-    //padding: 0px 10px;
     font-size: 20px;
     padding-right: 20px;
     letter-spacing: 0.02em;

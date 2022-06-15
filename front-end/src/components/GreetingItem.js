@@ -3,8 +3,8 @@ import moment from "moment"
 
 export const GreetingItem = ({ greeting, onLikeIncrease }) => {
   return (
-    <div className='thoughts-card'>
-      <p className='thoughts-message'> {greeting.message} </p>
+    <div className='greeting-card'>
+      <p className='greeting-message'> {greeting.message} </p>
 
       <div className='likesWrapper'>
         <div className='button-and-like'>

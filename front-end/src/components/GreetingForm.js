@@ -5,7 +5,8 @@ export const GreetingForm = ({ onFormSubmit, newGreeting, setNewGreeting }) => {
     <div className='form-card'>
       <form onSubmit={onFormSubmit}>
         <label htmlFor='newGreeting' className='form-heading'>
-          Skicka en hälsning{" "}
+          <h2>Gästbok</h2>
+          Skriv en hälsning{" "}
         </label>
         <textarea
           className='textarea'
@@ -13,18 +14,16 @@ export const GreetingForm = ({ onFormSubmit, newGreeting, setNewGreeting }) => {
           type='text'
           minLength='5'
           maxLength='200'
-          rows='4'
+          rows='5'
           value={newGreeting}
           onChange={(event) => setNewGreeting(event.target.value)}
         />
         <button
           disabled={newGreeting.length < 5}
           type='submit'
-          className='heart-beat'
+          className='send-button'
         >
-          <span className='read-heart'></span>
-          {""} Sänd hälsning <span className='read-heart'></span>
-          {""}
+          Sänd hälsning
         </button>
         <span className='caracters-left'>
           {" "}
