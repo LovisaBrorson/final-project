@@ -16,12 +16,14 @@ export const Welcome = () => {
 
   return (
     <div>
-      <div className='header_container'>
-        <img
-          src={header_img}
-          alt='Borje infront of his desk, painting.'
-          className='header_img'
-        />
+      <div className='header-fixed'>
+        <div className='header_container'>
+          <img
+            src={header_img}
+            alt='Borje infront of his desk, painting.'
+            className='header_img'
+          />
+        </div>
       </div>
       <article>
         <div className='wrapper-welcome'>

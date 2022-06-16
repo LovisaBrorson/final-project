@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  margin: 50px auto;
+  margin: 150px auto;
   width: 320px;
   display: flex;
   flex-direction: column;

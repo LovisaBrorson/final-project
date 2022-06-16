@@ -1,5 +1,5 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+//import { a } from "react-router-dom"
 import styled from "styled-components"
 
 const Ul = styled.ul`
@@ -8,33 +8,11 @@ const Ul = styled.ul`
   flex-flow: row nowrap;
   z-index: 1;
 
-  a {
-    color: #66806a;
-    text-decoration: none;
-  }
-
-  a.active {
-    color: #495469;
-    font-weight: 700;
-  }
-
   li {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 0.02em;
   }
-
-  // li a:after {
-  //   content: "";
-  //   display: block;
-  //   transform: scaleX(0);
-  //   transition: transform 0.3s;
-  // }
-
-  // li a:hover:after {
-  //   transform: scaleX(1);
-  //   transition: transform 0.3s;
-  // }
 
   @media (max-width: 768px) {
     flex-flow: column nowrap;
@@ -49,6 +27,17 @@ const Ul = styled.ul`
     padding-top: 6rem;
     transition: transform 0.3s ease-in-out;
     margin: 0;
+
+    a {
+      color: #66806a;
+      text-decoration: none;
+    }
+
+    a:active,
+    a:hover {
+      color: #495469;
+      font-weight: 700;
+    }
   }
 `
 
@@ -56,22 +45,22 @@ export const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <li>
-        <NavLink to='/'>HEM</NavLink>
+        <a href='/'>HEM</a>
       </li>
       <li>
-        <NavLink to='/guestbook'>GÄSTBOK</NavLink>
+        <a href='/guestbook'>GÄSTBOK</a>
       </li>
       <li>
-        <NavLink to='/contact'>KONTAKT</NavLink>
+        <a href='/contact'>KONTAKT</a>
       </li>
       <li>
-        <NavLink to='/info'>OM BÖRJE</NavLink>
+        <a href='/info'>OM BÖRJE</a>
       </li>
       <li>
-        <NavLink to='/exhibit'>UTSTÄLLNINGAR</NavLink>
+        <a href='/exhibit'>UTSTÄLLNINGAR</a>
       </li>
       <li>
-        <NavLink to='/gallery'>GALLERI</NavLink>
+        <a href='/gallery'>GALLERI</a>
       </li>
     </Ul>
   )

@@ -6,7 +6,7 @@ const StyledBurger = styled.div`
 width: 2rem;
 height: 2rem;
 position: fixed;
-top: 35px;
+top: 25px;
 right 20px;
 z-index: 20;
 display: none;
@@ -24,6 +24,7 @@ div {
     background-color: ${({ open }) => (open ? "#ccc" : "#333")};
     border-radius 10px;
     transform-origin: 1px;
+    transition: all 0.3s linear;
     
     
     &:nth-child(1) {

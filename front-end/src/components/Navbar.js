@@ -4,6 +4,8 @@ import styled from "styled-components"
 import { Burger } from "./Burger"
 
 const Nav = styled.nav`
+  // position: fixed;
+  // top: 0;
   width: 100%;
   height: 100px;
   display: flex;
@@ -23,8 +25,10 @@ const Nav = styled.nav`
     text-decoration: none;
   }
 
-  a.active {
+  a:active,
+  a:hover {
     color: #495469;
+    font-weight: 700;
   }
 
   li {

@@ -11,7 +11,30 @@ body {
 article {
   margin: 0 auto;
   width: 80%;
+  margin-top: 100px;
 }
+
+/* THIS IS THE CSS FOR THE HEADER-PICTURE */
+
+.header_img {
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: -30px;
+  z-index: -1;
+}
+
+.header_container {
+  overflow: hidden;
+  height: 200px;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* .header-fixed {
+  position: fixed;
+  top: 0;
+} */
 
 /* LOADER */
 
@@ -121,22 +144,6 @@ li {
   color: #555;
 } */
 
-/* THIS IS THE CSS FOR THE HEADER-PICTURE */
-
-.header_img {
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-  top: -30px;
-  z-index: -1;
-}
-
-.header_container {
-  overflow: hidden;
-  height: 200px;
-  position: relative;
-}
-
 /* THIS IS THE CSS FOR WELCOME/HOME PAGE */
 
 .wrapper-welcome {
@@ -145,7 +152,7 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 25px;
+  margin-top: -65px;
 }
 
 .wrapper-welcome p {
