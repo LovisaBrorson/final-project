@@ -24,6 +24,18 @@ const Ul = styled.ul`
     letter-spacing: 0.02em;
   }
 
+  // li a:after {
+  //   content: "";
+  //   display: block;
+  //   transform: scaleX(0);
+  //   transition: transform 0.3s;
+  // }
+
+  // li a:hover:after {
+  //   transform: scaleX(1);
+  //   transition: transform 0.3s;
+  // }
+
   @media (max-width: 768px) {
     flex-flow: column nowrap;
     background-color: #4a3c39;

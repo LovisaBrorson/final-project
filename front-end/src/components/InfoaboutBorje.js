@@ -4,7 +4,7 @@ import borje_summer from "../assets/Borje_Brorson_summer.jpg"
 export const Info = () => {
   return (
     <article>
-      <div className='wrapper'>
+      <div className='wrapper-infoaboutBorje'>
         <h1>Om Börje</h1>
         <img
           src={borje_summer}
@@ -20,7 +20,14 @@ export const Info = () => {
           sapiente veniam est consequatur ratione sit enim fuga et rerum
           perspiciatis non iste reiciendis aut atque voluptas.
         </p>
-        <h3>Citat</h3>
+        <div className='citat-card'>
+          <h3>
+            Lien och mulen vårdar landskapet, nu rostar lien och mulen är kall
+          </h3>
+          <p className='citat-Erik'>
+            Erik Sjödin - husdjurskonsulent och författare
+          </p>
+        </div>
       </div>
     </article>
   )

@@ -15,11 +15,11 @@ const StyleNotFond = styled.div`
   align-items: center;
 
   h1 {
-    color: #fff;
+    color: black;
   }
 
   p {
-    color: #fff;
+    color: black;
     font-size: 20px;
     align-self: center;
     margin: 5px 0 0;
@@ -41,8 +41,9 @@ const NotFond = () => {
   return (
     <Container>
       <StyleNotFond>
-        <p>Sorry, page not found,</p> <p>click the button to go back to</p>
-        <button onClick={onHomeButtonClick}>Homepage</button>
+        <p>Den här sidan finns tyvärr inte.</p>{" "}
+        <p>Gå tillbaka till Börjes sida här.</p>
+        <button onClick={onHomeButtonClick}>Börje Brorson</button>
       </StyleNotFond>
     </Container>
   )

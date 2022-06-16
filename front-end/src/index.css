@@ -82,11 +82,18 @@ article {
   z-index: -1;
 }
 
+.text-and-instagram-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid blue 3px;
+}
+
 .instagram {
   background-repeat: no-repeat;
-  position: absolute;
+  /* position: absolute;
   top: 175px;
-  left: 120px;
+  left: 120px; */
   height: 70px;
 }
 
@@ -99,11 +106,7 @@ article {
 
 /* THIS IS THE CSS FOR THE NAVBAR */
 
-/* ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
+/*
 
 li {
   display: inline-block;
@@ -197,6 +200,44 @@ li {
   z-index: -1;
 }
 
+/* CSS FOR EXHIBITON */
+
+.wrapper-exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 25px;
+}
+
+/* CSS FOR INFO ABOUT BÖRJE */
+
+.wrapper-infoaboutBorje {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-top: 25px;
+}
+
+.wrapper-infoaboutBorje p {
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+.citat-card {
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  background-color: #dae5d0;
+  max-width: 40ch;
+}
+
+.citat-Erik {
+  font-style: italic;
+}
+
 /* CSS FOR THE HEADER IMG THAT NEED TO CHANGE MANY TIMES TO LOOK GOOD */
 
 @media screen and (min-width: 425px) {
@@ -253,11 +294,11 @@ li {
     margin-top: 10px;
   } */
 
-  .instagram {
+  /* .instagram {
     top: 304px;
     left: 294px;
     height: 80px;
-  }
+  } */
 }
 
 /*////////////////////////*/
@@ -280,9 +321,9 @@ li {
     left: 40%;
   }
 
-  .instagram {
+  /* .instagram {
     left: 412px;
-  }
+  } */
 }
 
 /* LAGER SCREEN FOR THE HEADER */
