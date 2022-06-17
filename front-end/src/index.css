@@ -16,6 +16,13 @@ article {
   margin-top: 100px;
 }
 
+/* CSS FOR COPYRIGHT TEXT */
+
+.copyright-text {
+  color: #555;
+  font-size: small;
+}
+
 /* THIS IS THE CSS FOR THE HEADER-PICTURE */
 
 .header_img {
@@ -211,6 +218,15 @@ li {
   position: relative;
 }
 
+/* CSS FOR GALLERY */
+
+.wrapper-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 /* CSS FOR INFO ABOUT BÖRJE */
 
 .wrapper-infoaboutBorje {
@@ -363,6 +379,11 @@ li {
 
   .header_container {
     height: 300px;
+  }
+
+  /* CSS FOR COPYRIGHT TEXT */
+  .copyright-text {
+    font-size: medium;
   }
 
   /* CSS INFO ABOUT BORJE */

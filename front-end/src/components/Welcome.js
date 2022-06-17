@@ -49,6 +49,14 @@ export const Welcome = () => {
             Till Galleriet
           </button>
         </div>
+
+        <div>
+          <p className='copyright-text'>
+            Allt bildmaterial © Börje Brorson. Konstverken är skyddade enligt
+            upphovsrättslagen (SFS 1960:729). Kopiering och återgivning får inte
+            ske utan upphovsmannens tillstånd.
+          </p>
+        </div>
       </article>
     </div>
   )
