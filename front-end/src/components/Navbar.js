@@ -41,12 +41,12 @@ const Nav = styled.nav`
     margin-bottom: 50px;
   }
 
-  li:last-of-type {
-    padding-right: 55px;
-  }
-
   @media (min-width: 1024px) {
     font-size: 40px;
+
+    li:last-of-type {
+      padding-right: 55px;
+    }
   }
 `
 

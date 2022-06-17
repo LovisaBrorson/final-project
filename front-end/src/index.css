@@ -1,6 +1,8 @@
 body {
   margin: 0 auto;
   /* color: #555; */
+  /* color: #146356; */
+  color: #064635;
   font-family: "Red Hat Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -152,7 +154,7 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: -65px;
+  margin-top: -75px;
 }
 
 .wrapper-welcome p {
@@ -200,13 +202,6 @@ li {
   border-bottom: 1px solid #5d6e5f;
 }
 
-/* THIS IS THE CSS FOR THE INFO ABOUT BORJE PAGE */
-
-.Img-Borje_Brorson_summer {
-  height: 100px;
-  z-index: -1;
-}
-
 /* CSS FOR EXHIBITON */
 
 .wrapper-exhibit {
@@ -214,7 +209,6 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 25px;
 }
 
 /* CSS FOR INFO ABOUT BÖRJE */
@@ -224,12 +218,15 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 25px;
 }
 
 .wrapper-infoaboutBorje p {
   max-width: 60ch;
   line-height: 1.6;
+}
+
+.wrapper-infoaboutBorje h1 {
+  margin-top: 50px;
 }
 
 .citat-card {
@@ -239,10 +236,25 @@ li {
   flex-direction: column;
   background-color: #dae5d0;
   max-width: 40ch;
+  margin: 40px 0 50px 0;
 }
 
 .citat-Erik {
   font-style: italic;
+}
+
+.img-infoaboutBorje {
+  height: 21em;
+  z-index: -1;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+
+.colors-infoaboutBorje {
+  display: none;
+}
+
+.cow-infoaboutBorje {
+  display: none;
 }
 
 /* CSS FOR THE HEADER IMG THAT NEED TO CHANGE MANY TIMES TO LOOK GOOD */
@@ -271,9 +283,39 @@ li {
 
   .goToGalleryButton {
     padding: 10px 40px;
-    margin: 40px 10px 40px 0px;
+    margin: 40px 10px 50px 0px;
     font-size: 20px;
     border-bottom: 5px solid #5d6e5f;
+  }
+
+  /* CSS INFO ABOUT BÖRJE */
+
+  .wrapper-img-infoaboutBorje {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .wrapper-img-infoaboutBorje-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-infoaboutBorje {
+    height: 22em;
+  }
+
+  .colors-infoaboutBorje {
+    display: block;
+    height: 14em;
+    z-index: -1;
+  }
+
+  .cow-infoaboutBorje {
+    height: 8em;
+    display: block;
+    z-index: -1;
   }
 
   /* THIS IS THE CSS FOR CONTACT */
@@ -312,7 +354,7 @@ li {
 /* ------- LAPTOP ------- */
 
 @media screen and (min-width: 1024px) {
-  /* THIS IS THE CSS FOR THE HEADER-PICTURE */
+  /* CSS FOR THE HEADER-PICTURE */
 
   .header_img {
     top: -200px;
@@ -322,7 +364,16 @@ li {
     height: 300px;
   }
 
-  /* THIS IS THE CSS FOR CONTACT */
+  /* CSS INFO ABOUT BORJE */
+  .wrapper-infoaboutBorje p {
+    font-size: 18px;
+  }
+
+  .wrapper-infoaboutBorje h1 {
+    font-size: 29px;
+  }
+
+  /* CSS FOR CONTACT */
 
   .contact-text {
     left: 40%;

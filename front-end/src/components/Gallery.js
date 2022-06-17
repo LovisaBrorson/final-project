@@ -2,8 +2,8 @@ import React from "react"
 
 export const Gallery = () => {
   return (
-    <div>
+    <article>
       <h1>Galleri</h1>
-    </div>
+    </article>
   )
 }
