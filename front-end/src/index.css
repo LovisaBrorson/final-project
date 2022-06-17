@@ -291,6 +291,7 @@ li {
   /* CSS INFO ABOUT BÖRJE */
 
   .wrapper-img-infoaboutBorje {
+    margin: 20px 0 25px 0;
     display: flex;
     flex-direction: row;
     gap: 3px;
