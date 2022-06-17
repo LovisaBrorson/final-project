@@ -1,5 +1,4 @@
 import React from "react"
-//import { a } from "react-router-dom"
 import styled from "styled-components"
 
 const Ul = styled.ul`
@@ -37,6 +36,8 @@ const Ul = styled.ul`
     a:hover {
       color: #495469;
       font-weight: 700;
+      transform: scaleX(1);
+      transition: transform 0.3s;
     }
   }
 `

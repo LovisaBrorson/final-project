@@ -4,14 +4,15 @@ import styled from "styled-components"
 import { Burger } from "./Burger"
 
 const Nav = styled.nav`
-  // position: fixed;
-  // top: 0;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   background-color: #b4cfb0;
   margin: 0;
+  z-index: 1;
 
   h1 {
     font-size: 40px;
@@ -29,6 +30,8 @@ const Nav = styled.nav`
   a:hover {
     color: #495469;
     font-weight: 700;
+    transform: scaleX(1);
+    transition: transform 0.3s;
   }
 
   li {

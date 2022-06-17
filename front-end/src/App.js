@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 
 import "./guestbook.css"
@@ -13,17 +13,12 @@ import Guestbookapp from "./components/Guestbookapp"
 import NotFond from "./components/Notfond"
 
 export const App = () => {
-  const [openLinks, setOpenLinks] = useState(true)
-
   return (
-    <BrowserRouter
-      openLinks={openLinks}
-      onClick={() => setOpenLinks(!openLinks)}
-    >
+    <BrowserRouter>
       <Navbar />
 
       <Routes>
-        <Route path='/' element={<Welcome />} openLinks={openLinks} />
+        <Route path='/' element={<Welcome />} />
 
         <Route path='/contact' element={<Contact />} />
 
