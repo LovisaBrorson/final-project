@@ -176,7 +176,7 @@ li {
 }
 
 .painting-welcomepage {
-  width: 90%;
+  width: 75%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -293,6 +293,7 @@ li {
 /* CSS FOR GALLERY */
 
 .wrapper-paintings {
+  justify-items: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin-bottom: 50px;
