@@ -20,7 +20,7 @@ article {
 
 .copyright-text {
   color: #555;
-  font-size: small;
+  font-size: 10px;
 }
 
 /* THIS IS THE CSS FOR THE HEADER-PICTURE */
@@ -176,7 +176,7 @@ li {
 }
 
 .painting-welcomepage {
-  width: 65%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -186,11 +186,11 @@ li {
 
 .goToGalleryButton {
   position: relative;
-  padding: 5px 20px;
+  padding: 15px 30px;
   margin: 20px 5px 40px 0px;
   float: left;
   border-radius: 3px;
-  font-size: 10px;
+  font-size: 15px;
   color: #fff;
   text-decoration: none;
   background-color: #66806a;
@@ -225,6 +225,15 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+.painting-gallery {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  z-index: -1;
 }
 
 /* CSS FOR INFO ABOUT BÖRJE */
@@ -281,6 +290,19 @@ li {
   }
 }
 
+/* CSS FOR GALLERY */
+
+.wrapper-paintings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 50px;
+}
+
+.painting-gallery {
+  margin-top: 25px;
+  z-index: -1;
+}
+
 /*////////////////////////*/
 /* ------- TABLET ------- */
 
@@ -302,6 +324,10 @@ li {
     margin: 40px 10px 50px 0px;
     font-size: 20px;
     border-bottom: 5px solid #5d6e5f;
+  }
+
+  .copyright-text {
+    font-size: 13px;
   }
 
   /* CSS INFO ABOUT BÖRJE */
@@ -335,7 +361,7 @@ li {
     z-index: -1;
   }
 
-  /* THIS IS THE CSS FOR CONTACT */
+  /*CSS FOR CONTACT */
 
   .phone {
     height: 80%;
@@ -365,6 +391,19 @@ li {
     left: 294px;
     height: 80px;
   } */
+
+  /*CSS FOR GALLERY */
+
+  .painting-gallery {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    z-index: -1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
 
 /*////////////////////////*/
@@ -404,6 +443,13 @@ li {
   /* .instagram {
     left: 412px;
   } */
+
+  /* CSS FOR GALLERY */
+
+  .wrapper-paintings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 
 /* LAGER SCREEN FOR THE HEADER */
@@ -411,6 +457,11 @@ li {
 @media screen and (min-width: 1200px) {
   .header_img {
     top: -270px;
+  }
+
+  .wrapper-paintings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   }
 
   .header_container {

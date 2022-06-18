@@ -40,7 +40,7 @@ export const Info = () => {
         </p>
 
         <p>
-          År 1997 målande jag tidningen Lands Jultallrik och 2004 fick jag
+          År 1997 målade jag tidningen Lands Jultallrik och 2004 fick jag
           Vårgårda kommuns kulturpris som Bygdens konstnär.
         </p>
         <div className='citat-card'>
