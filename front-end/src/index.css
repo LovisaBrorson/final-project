@@ -317,7 +317,7 @@ li {
     height: 250px;
   }
 
-  /* BUTTOM ON WELCOMEPAGE */
+  /* BUTTON ON WELCOMEPAGE */
 
   .goToGalleryButton {
     padding: 10px 40px;
@@ -359,6 +359,12 @@ li {
     height: 8em;
     display: block;
     z-index: -1;
+  }
+
+  /* CSS FOR WELCOME/HOME PAGE */
+
+  .painting-welcomepage {
+    width: 70%;
   }
 
   /*CSS FOR CONTACT */

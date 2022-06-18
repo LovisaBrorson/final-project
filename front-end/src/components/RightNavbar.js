@@ -60,10 +60,10 @@ export const RightNav = ({ open }) => {
         <a href='/info'>OM BÖRJE</a>
       </li>
       <li>
-        <a href='/exhibit'>UTSTÄLLNINGAR</a>
+        <a href='/gallery'>GALLERI</a>
       </li>
       <li>
-        <a href='/gallery'>GALLERI</a>
+        <a href='/exhibit'>UTSTÄLLNINGAR</a>
       </li>
     </Ul>
   )
