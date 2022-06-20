@@ -5,7 +5,7 @@ export const GreetingForm = ({ onFormSubmit, newGreeting, setNewGreeting }) => {
     <div className='form-card'>
       <form onSubmit={onFormSubmit}>
         <label htmlFor='newGreeting' className='form-heading'>
-          <h2>Gästbok</h2>
+          <h2>GÄSTBOK</h2>
           Skriv en hälsning{" "}
         </label>
         <textarea

@@ -4,7 +4,7 @@ export const Exhibit = () => {
   return (
     <article>
       <div className='wrapper-exhibit'>
-        <h1>Utställningar</h1>
+        <h1>UTSTÄLLNINGAR</h1>
         Här kommer du snart kunna se var Börje ställer ut.
         {/* <p>
           Här är lite info om kommande utställningar som Börje ska ha i

@@ -10,7 +10,7 @@ export const Gallery = () => {
   return (
     <article>
       <div className='wrapper-gallery'>
-        <h1>Galleri</h1>
+        <h1>GALLERI</h1>
         <div className='wrapper-paintings'>
           <img
             src={beehive_1}

@@ -7,7 +7,7 @@ export const Info = () => {
   return (
     <article>
       <div className='wrapper-infoaboutBorje'>
-        <h1>Om Börje Brorson</h1>
+        <h1>OM BÖRJE</h1>
 
         <div className='wrapper-img-infoaboutBorje'>
           <img

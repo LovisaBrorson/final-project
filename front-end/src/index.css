@@ -136,23 +136,6 @@ article {
   z-index: -1;
 }
 
-/* THIS IS THE CSS FOR THE NAVBAR */
-
-/*
-
-li {
-  display: inline-block;
-  margin-left: 10px;
-} */
-
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 20px 0 20px;
-  color: #555;
-} */
-
 /* THIS IS THE CSS FOR WELCOME/HOME PAGE */
 
 .wrapper-welcome {
@@ -218,6 +201,11 @@ li {
   position: relative;
 }
 
+.wrapper-exhibit h1 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
 /* CSS FOR GALLERY */
 
 .wrapper-gallery {
@@ -252,6 +240,7 @@ li {
 
 .wrapper-infoaboutBorje h1 {
   margin-top: 50px;
+  font-size: 30px;
 }
 
 .citat-card {
@@ -302,6 +291,11 @@ li {
 .painting-gallery {
   margin-top: 25px;
   z-index: -1;
+}
+
+.wrapper-gallery h1 {
+  margin-top: 50px;
+  font-size: 30px;
 }
 
 /*////////////////////////*/
@@ -425,6 +419,16 @@ li {
 
   .header_container {
     height: 300px;
+  }
+
+  /* CSS FOR WELCOME/HOMEPAGE */
+
+  .wrapper-welcome p {
+    font-size: 20px;
+  }
+
+  .welcome-text-span {
+    font-size: 22px;
   }
 
   /* CSS FOR COPYRIGHT TEXT */
