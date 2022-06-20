@@ -1,24 +1,32 @@
 import React from "react"
+import exhibitionhome from "../assets/utställning-1.jpg"
+import paintingwindow from "../assets/utställning-2.jpg"
 
 export const Exhibit = () => {
   return (
     <article>
       <div className='wrapper-exhibit'>
         <h1>UTSTÄLLNINGAR</h1>
-        Här kommer du snart kunna se var Börje ställer ut.
-        {/* <p>
-          Här är lite info om kommande utställningar som Börje ska ha i
-          framtiden.
-        </p>
-
-        <h2>Tidigare utställningar</h2>
-        <p>Horla på bibblan</p>
-        <p>Horla - 28 aug 2021</p>
-        <p>Bokacafet</p>
         <p>
-          Mer bilder finns 16 aug 2021 där han målar av hus + 16 juli 2018,{" "}
+          <span>24-25 september </span>ställer Börje ut på Logården, Odensåkers
+          hembygdsgård.
         </p>
-        <p>15 aug 2021 utaställningen i garaget</p> */}
+        <p>
+          <span>26 juni - 3 juli </span> kan man se akvarellerna från Holleden i
+          Vägkyrkan i Hol.
+        </p>
+        <div className='wrapper-paintings'>
+          <img
+            src={paintingwindow}
+            alt='Hol-anslagstavla'
+            className='painting-gallery'
+          />
+          <img
+            src={exhibitionhome}
+            alt='Hol-anslagstavla'
+            className='painting-gallery'
+          />
+        </div>
       </div>
     </article>
   )
