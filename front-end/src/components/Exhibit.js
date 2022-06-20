@@ -9,7 +9,7 @@ export const Exhibit = () => {
         <h1>UTSTÄLLNINGAR</h1>
         <p>
           <span>24-25 september </span>ställer Börje ut på Logården, Odensåkers
-          hembygdsgård.
+          hembygdsgård, Väring.
         </p>
         <p>
           <span>26 juni - 3 juli </span> kan man se akvarellerna från Holleden i
@@ -18,12 +18,12 @@ export const Exhibit = () => {
         <div className='wrapper-paintings'>
           <img
             src={paintingwindow}
-            alt='Hol-anslagstavla'
+            alt='A painting and a window'
             className='painting-gallery'
           />
           <img
             src={exhibitionhome}
-            alt='Hol-anslagstavla'
+            alt='Painting on a wall and a table'
             className='painting-gallery'
           />
         </div>

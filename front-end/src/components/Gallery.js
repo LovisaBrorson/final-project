@@ -5,6 +5,14 @@ import children_cows from "../assets/paintings/children-and-cows.jpg"
 import dogs from "../assets/paintings/dogs.jpg"
 import goats from "../assets/paintings/goats.jpg"
 import horses from "../assets/paintings/horses.jpg"
+import tailor from "../assets/paintings/skräddare.jpg"
+import cross from "../assets/paintings/cross.jpg"
+import giant from "../assets/paintings/giant-in-ornunga.jpg"
+import doors from "../assets/paintings/doors.jpg"
+import father_son from "../assets/paintings/father-and-son.jpg"
+import galstad from "../assets/paintings/Galstad.jpg"
+import tomtar from "../assets/paintings/tomtar.jpg"
+import tomte_pigs from "../assets/paintings/tomte-och-grisar.jpg"
 
 export const Gallery = () => {
   return (
@@ -34,6 +42,16 @@ export const Gallery = () => {
           />
           <img src={goats} alt='Getter' className='painting-gallery' />
           <img src={horses} alt='Två hästar' className='painting-gallery' />
+
+          <img src={giant} alt='Två hästar' className='painting-gallery' />
+          <img src={cross} alt='Två hästar' className='painting-gallery' />
+          <img src={tailor} alt='Två hästar' className='painting-gallery' />
+
+          <img src={father_son} alt='Två hästar' className='painting-gallery' />
+          <img src={doors} alt='Två hästar' className='painting-gallery' />
+          <img src={galstad} alt='Två hästar' className='painting-gallery' />
+          <img src={tomtar} alt='Två hästar' className='painting-gallery' />
+          <img src={tomte_pigs} alt='Två hästar' className='painting-gallery' />
         </div>
       </div>
       <div>
