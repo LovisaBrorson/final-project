@@ -114,26 +114,22 @@ article {
   z-index: -1;
 }
 
-.text-and-instagram-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: solid blue 3px;
-}
-
 .instagram {
-  background-repeat: no-repeat;
-  /* position: absolute;
-  top: 175px;
-  left: 120px; */
   height: 70px;
 }
 
 .contact-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
   top: 1px;
   left: 60px;
   z-index: -1;
+}
+
+.contact-text p {
+  margin-top: 8px;
 }
 
 /* THIS IS THE CSS FOR WELCOME/HOME PAGE */
@@ -271,7 +267,6 @@ article {
 .img-infoaboutBorje {
   height: 21em;
   z-index: -1;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 .colors-infoaboutBorje {
@@ -439,9 +434,6 @@ article {
   }
 
   .contact-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     top: 5%;
     left: 35%;
     font-size: 120%;
@@ -453,12 +445,6 @@ article {
 
   .contact-text p {
     margin-top: 10px;
-  } */
-
-  /* .instagram {
-    top: 304px;
-    left: 294px;
-    height: 80px;
   } */
 
   /*CSS FOR GALLERY */
