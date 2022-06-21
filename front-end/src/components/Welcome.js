@@ -25,6 +25,7 @@ export const Welcome = () => {
           />
         </div>
       </div>
+
       <article>
         <div className='wrapper-welcome'>
           <p>

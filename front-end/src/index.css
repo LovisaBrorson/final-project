@@ -96,7 +96,6 @@ article {
 /* THIS IS THE CSS FOR CONTACT */
 
 .wrapper-contact {
-  /* border: solid black 3px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +105,7 @@ article {
 }
 
 .phone {
-  height: 65%;
+  height: 60%;
   position: absolute;
   top: 0;
   left: -24px;
@@ -115,7 +114,15 @@ article {
 }
 
 .instagram {
-  height: 70px;
+  height: 35px;
+}
+
+.wrapper-instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  margin-left: 7px;
 }
 
 .contact-text {
@@ -130,6 +137,8 @@ article {
 
 .contact-text p {
   margin-top: 8px;
+  max-width: 60ch;
+  line-height: 1.6;
 }
 
 /* THIS IS THE CSS FOR WELCOME/HOME PAGE */
@@ -428,7 +437,7 @@ article {
   /*CSS FOR CONTACT */
 
   .phone {
-    height: 80%;
+    height: 70%;
     top: 0;
     left: -24px;
   }
@@ -439,13 +448,16 @@ article {
     font-size: 120%;
   }
 
-  /* .contact-text h1 {
-    margin: 0;
+  .instagram {
+    height: 50px;
   }
 
   .contact-text p {
-    margin-top: 10px;
-  } */
+    margin-top: 8px;
+    max-width: 60ch;
+    line-height: 1.6;
+    font-size: 18px;
+  }
 
   /*CSS FOR GALLERY */
 

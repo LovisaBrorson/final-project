@@ -10,10 +10,14 @@ export const Contact = () => {
 
         <div className='contact-text'>
           <h1>KONTAKTA BÖRJE</h1>
-          <p>Telefon: 0322-661064 </p>
           <p>Mobil: 0729-380345 </p>
+          <p>Telefon: 0322-661064 </p>
+
           <p>Mail: broakern@gmail.com</p>
-          <img src={instagram} alt='Instagram' className='instagram' />
+          <div className='wrapper-instagram'>
+            <img src={instagram} alt='Instagram' className='instagram' />
+            <spam>Borje_Brorson_akvarell</spam>
+          </div>
         </div>
       </div>
     </article>
