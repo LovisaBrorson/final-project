@@ -6,8 +6,6 @@ import family from "../assets/paintings/family.jpg"
 import fox from "../assets/paintings/Fox-1.jpg"
 import man_in_door from "../assets/paintings/man-in-the-door.jpg"
 
-// window.alert("Den här sidan använder små goda kakor 🍪")
-
 export const Welcome = () => {
   const navigate = useNavigate()
   const goToGallery = () => {
@@ -20,7 +18,7 @@ export const Welcome = () => {
         <div className='header_container'>
           <img
             src={header_img}
-            alt='Borje infront of his desk, painting.'
+            alt='Borje infront of his desk painting.'
             className='header_img'
           />
         </div>
@@ -30,7 +28,7 @@ export const Welcome = () => {
         <div className='wrapper-welcome'>
           <p>
             <span className='welcome-text-span'>BÖRJE BRORSON</span> är
-            illustratör och konstnär ifrån Asklanda. I navistisk stil målar han
+            illustratör och konstnär ifrån Asklanda. I naivistisk stil målar han
             djur och natur och även gårdsmålningar på beställning.
           </p>
 

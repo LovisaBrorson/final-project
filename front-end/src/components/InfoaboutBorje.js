@@ -1,5 +1,5 @@
 import React from "react"
-import borje_summer from "../assets/profilpic-to-infoaboutBorje.jpg"
+import borje_paints from "../assets/profilpic-to-infoaboutBorje.jpg"
 import colors from "../assets/colors.jpg"
 import cow from "../assets/cow-black-and-white.jpg"
 
@@ -11,7 +11,7 @@ export const Info = () => {
 
         <div className='wrapper-img-infoaboutBorje'>
           <img
-            src={borje_summer}
+            src={borje_paints}
             alt='Borje painting'
             className='img-infoaboutBorje'
           />

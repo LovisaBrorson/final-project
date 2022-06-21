@@ -18,7 +18,7 @@ export const Exhibit = () => {
         <div className='wrapper-paintings'>
           <img
             src={paintingwindow}
-            alt='A painting and a window'
+            alt='A painting and a window with flowers'
             className='painting-gallery'
           />
           <img

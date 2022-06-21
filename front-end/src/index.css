@@ -1,12 +1,9 @@
 body {
   margin: 0 auto;
-  /* color: #555; */
-  /* color: #146356; */
   color: #064635;
   font-family: "Red Hat Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   font-family: "Red Hat Mono", monospace;
 }
 
@@ -23,7 +20,7 @@ article {
   font-size: 10px;
 }
 
-/* THIS IS THE CSS FOR THE HEADER-PICTURE */
+/*CSS FOR THE HEADER-PICTURE */
 
 .header_img {
   background-repeat: no-repeat;
@@ -40,7 +37,7 @@ article {
   margin-top: 100px;
 }
 
-/* LOADER */
+/* CSS FOR THE LOADER */
 
 .spinner {
   position: absolute;
@@ -88,7 +85,7 @@ article {
   }
 }
 
-/* THIS IS THE CSS FOR CONTACT */
+/* CSS FOR CONTACT */
 
 .wrapper-contact {
   display: flex;
@@ -136,7 +133,13 @@ article {
   line-height: 1.6;
 }
 
-/* THIS IS THE CSS FOR WELCOME/HOME PAGE */
+.email {
+  color: #064635;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*CSS FOR WELCOME/HOME PAGE */
 
 .wrapper-welcome {
   display: flex;
@@ -279,7 +282,7 @@ article {
   display: none;
 }
 
-/* CSS FOR THE HEADER IMG THAT NEED TO CHANGE MANY TIMES TO LOOK GOOD */
+/* CSS FOR THE HEADER IMG THAT NEEDS TO CHANGE MANY TIMES TO LOOK GOOD */
 
 @media screen and (min-width: 425px) {
   .header_img {
@@ -342,7 +345,6 @@ article {
   background-color: #66806a;
   border: none;
   border-bottom: 3px solid #5d6e5f;
-  /* text-shadow: 0px -2px #b4cfb0; */
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
@@ -367,7 +369,7 @@ article {
 /* ------- TABLET ------- */
 
 @media screen and (min-width: 768px) {
-  /* THIS IS THE CSS FOR THE HEADER-PICTURE */
+  /*CSS FOR THE HEADER-PICTURE */
 
   .header_img {
     top: -135px;
@@ -513,10 +515,6 @@ article {
   .contact-text {
     left: 40%;
   }
-
-  /* .instagram {
-    left: 412px;
-  } */
 
   /* CSS FOR GALLERY */
 
