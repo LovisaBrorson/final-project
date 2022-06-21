@@ -17,7 +17,8 @@ const Nav = styled.nav`
   h1 {
     font-size: 40px;
     font-family: "Imperial Script", cursive;
-    margin: 27px;
+    margin-left: 27px;
+    margin-top: 23px;
     font-weight: 700;
   }
 
@@ -39,6 +40,15 @@ const Nav = styled.nav`
     padding-right: 20px;
     letter-spacing: 0.02em;
     margin-bottom: 50px;
+  }
+
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 50px;
+      font-family: "Imperial Script", cursive;
+      margin: 20px 0 0 35px;
+      font-weight: 700;
+    }
   }
 
   @media (min-width: 1024px) {
