@@ -11,8 +11,8 @@ import giant from "../assets/paintings/giant-in-ornunga.jpg"
 import doors from "../assets/paintings/doors.jpg"
 import father_son from "../assets/paintings/father-and-son.jpg"
 import galstad from "../assets/paintings/Galstad.jpg"
-import tomtar from "../assets/paintings/tomtar.jpg"
-import tomte_pigs from "../assets/paintings/tomte-och-grisar.jpg"
+import santa from "../assets/paintings/tomtar.jpg"
+import santa_pigs from "../assets/paintings/tomte-och-grisar.jpg"
 
 export const Gallery = () => {
   return (
@@ -37,21 +37,33 @@ export const Gallery = () => {
           />
           <img
             src={dogs}
-            alt='Borje infront of his desk, painting.'
+            alt='Borje målar vid sitt skrivbord'
             className='painting-gallery'
           />
           <img src={goats} alt='Getter' className='painting-gallery' />
           <img src={horses} alt='Två hästar' className='painting-gallery' />
 
-          <img src={giant} alt='Två hästar' className='painting-gallery' />
-          <img src={cross} alt='Två hästar' className='painting-gallery' />
-          <img src={tailor} alt='Två hästar' className='painting-gallery' />
+          <img
+            src={giant}
+            alt='Jätten vid Ornungasjön'
+            className='painting-gallery'
+          />
+          <img src={cross} alt='Jesu kors' className='painting-gallery' />
+          <img src={tailor} alt='Skräddare' className='painting-gallery' />
 
-          <img src={father_son} alt='Två hästar' className='painting-gallery' />
-          <img src={doors} alt='Två hästar' className='painting-gallery' />
-          <img src={galstad} alt='Två hästar' className='painting-gallery' />
-          <img src={tomtar} alt='Två hästar' className='painting-gallery' />
-          <img src={tomte_pigs} alt='Två hästar' className='painting-gallery' />
+          <img
+            src={father_son}
+            alt='Far och son'
+            className='painting-gallery'
+          />
+          <img src={doors} alt='Ett dörrpar' className='painting-gallery' />
+          <img src={galstad} alt='Gårdsmålning' className='painting-gallery' />
+          <img src={santa} alt='Tomtar och häst' className='painting-gallery' />
+          <img
+            src={santa_pigs}
+            alt='Tomtar och grisar'
+            className='painting-gallery'
+          />
         </div>
       </div>
       <div>

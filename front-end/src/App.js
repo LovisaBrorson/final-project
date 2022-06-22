@@ -52,6 +52,7 @@ export const App = () => {
           padding: "15px",
         }}
         buttonText='Jag gillar kakor!'
+        expires={1}
       >
         Den här sidan använder små goda kakor 🍪
       </CookieConsent>

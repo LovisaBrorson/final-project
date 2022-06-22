@@ -20,131 +20,7 @@ article {
   font-size: 10px;
 }
 
-/*CSS FOR THE HEADER-PICTURE */
-
-.header_img {
-  background-repeat: no-repeat;
-  width: 100%;
-  position: absolute;
-  top: -30px;
-  z-index: -1;
-}
-
-.header_container {
-  overflow: hidden;
-  height: 200px;
-  position: relative;
-  margin-top: 100px;
-}
-
-/* CSS FOR THE LOADER */
-
-.spinner {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lds-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-.lds-ring div {
-  box-sizing: border-box;
-  display: block;
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  margin: 8px;
-  border: 12px solid #66806a;
-  border-radius: 50%;
-  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #66806a transparent transparent transparent;
-}
-.lds-ring div:nth-child(1) {
-  animation-delay: -0.45s;
-}
-.lds-ring div:nth-child(2) {
-  animation-delay: -0.3s;
-}
-.lds-ring div:nth-child(3) {
-  animation-delay: -0.15s;
-}
-@keyframes lds-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* CSS FOR CONTACT */
-
-.wrapper-contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  z-index: 100;
-}
-
-.phone {
-  height: 60%;
-  position: absolute;
-  top: 0;
-  left: -24px;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-.instagram {
-  height: 35px;
-}
-
-.wrapper-instagram {
-  display: flex;
-  flex-direction: row;
-  gap: 4px;
-  align-items: center;
-  margin-left: 7px;
-}
-
-.contact-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 1px;
-  left: 60px;
-  z-index: -1;
-}
-
-.contact-text p {
-  margin-top: 8px;
-  max-width: 60ch;
-  line-height: 1.6;
-}
-
-.email {
-  color: #064635;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.email:hover {
-  font-weight: bold;
-}
-
-/*CSS FOR WELCOME/HOME PAGE */
+/* CSS FOR WELCOME/HOME PAGE */
 
 .wrapper-welcome {
   display: flex;
@@ -198,47 +74,128 @@ article {
   border-bottom: 1px solid #5d6e5f;
 }
 
-/* CSS FOR EXHIBITON */
+/* CSS FOR THE HEADER-PICTURE */
 
-.wrapper-exhibit {
+.header_img {
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: -55px;
+  z-index: -1;
+}
+
+.header_container {
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* CSS FOR CONTACT */
+
+.wrapper-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  /* z-index: 100; */
+}
+
+.phone {
+  height: 60%;
+  position: absolute;
+  top: 0;
+  left: -24px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.instagram {
+  height: 35px;
+}
+
+.wrapper-instagram {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  margin-left: 7px;
+}
+
+.contact-text {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-bottom: 50px;
+  position: absolute;
+  top: 1px;
+  left: 60px;
+  z-index: -1;
 }
 
-.wrapper-exhibit h1 {
-  margin-top: 50px;
-  font-size: 30px;
-}
-
-.wrapper-exhibit span {
-  font-weight: 700;
-}
-
-.wrapper-exhibit p {
+.contact-text p {
+  margin-top: 8px;
   max-width: 60ch;
   line-height: 1.6;
 }
 
-/* CSS FOR GALLERY */
-
-.wrapper-gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+.email {
+  color: #064635;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.painting-gallery {
-  width: 90%;
+.email:hover {
+  font-weight: bold;
+}
+
+/* CSS FOR THE LOADER */
+
+.spinner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-top: 25px;
-  z-index: -1;
+}
+
+.lds-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 8px;
+  border: 12px solid #66806a;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #66806a transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* CSS FOR INFO ABOUT BÖRJE */
@@ -287,15 +244,23 @@ article {
   display: none;
 }
 
-/* CSS FOR THE HEADER IMG THAT NEEDS TO CHANGE MANY TIMES TO LOOK GOOD */
+/* CSS FOR GALLERY */
 
-@media screen and (min-width: 425px) {
-  .header_img {
-    top: -45px;
-  }
+.wrapper-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
-/* CSS FOR GALLERY */
+.painting-gallery {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 25px;
+  z-index: -1;
+}
 
 .wrapper-paintings {
   justify-items: center;
@@ -313,6 +278,39 @@ article {
 .wrapper-gallery h1 {
   margin-top: 50px;
   font-size: 30px;
+}
+
+/* CSS FOR EXHIBITON */
+
+.wrapper-exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 50px;
+}
+
+.wrapper-exhibit h1 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.wrapper-exhibit span {
+  font-weight: 700;
+}
+
+.wrapper-exhibit p {
+  max-width: 60ch;
+  line-height: 1.6;
+}
+
+/* CSS FOR THE HEADER IMG THAT NEEDS TO CHANGE MANY TIMES TO LOOK GOOD */
+
+@media screen and (min-width: 425px) {
+  .header_img {
+    top: -45px;
+  }
 }
 
 /* CSS FOR NO FOND PAGE */
@@ -374,6 +372,12 @@ article {
 /* ------- TABLET ------- */
 
 @media screen and (min-width: 768px) {
+  /* CSS FOR WELCOME/HOME PAGE */
+
+  .painting-welcomepage {
+    width: 70%;
+  }
+
   /*CSS FOR THE HEADER-PICTURE */
 
   .header_img {
@@ -395,6 +399,31 @@ article {
 
   .copyright-text {
     font-size: 13px;
+  }
+
+  /*CSS FOR CONTACT */
+
+  .phone {
+    height: 70%;
+    top: 0;
+    left: -24px;
+  }
+
+  .contact-text {
+    top: 5%;
+    left: 35%;
+    font-size: 120%;
+  }
+
+  .instagram {
+    height: 50px;
+  }
+
+  .contact-text p {
+    margin-top: 8px;
+    max-width: 60ch;
+    line-height: 1.6;
+    font-size: 18px;
   }
 
   /* CSS INFO ABOUT BÖRJE */
@@ -426,37 +455,6 @@ article {
     height: 8em;
     display: block;
     z-index: -1;
-  }
-
-  /* CSS FOR WELCOME/HOME PAGE */
-
-  .painting-welcomepage {
-    width: 70%;
-  }
-
-  /*CSS FOR CONTACT */
-
-  .phone {
-    height: 70%;
-    top: 0;
-    left: -24px;
-  }
-
-  .contact-text {
-    top: 5%;
-    left: 35%;
-    font-size: 120%;
-  }
-
-  .instagram {
-    height: 50px;
-  }
-
-  .contact-text p {
-    margin-top: 8px;
-    max-width: 60ch;
-    line-height: 1.6;
-    font-size: 18px;
   }
 
   /*CSS FOR GALLERY */
@@ -506,6 +504,12 @@ article {
     font-size: medium;
   }
 
+  /* CSS FOR CONTACT */
+
+  .contact-text {
+    left: 40%;
+  }
+
   /* CSS INFO ABOUT BORJE */
   .wrapper-infoaboutBorje p {
     font-size: 18px;
@@ -513,12 +517,6 @@ article {
 
   .wrapper-infoaboutBorje h1 {
     font-size: 29px;
-  }
-
-  /* CSS FOR CONTACT */
-
-  .contact-text {
-    left: 40%;
   }
 
   /* CSS FOR GALLERY */
