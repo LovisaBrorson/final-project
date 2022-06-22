@@ -34,16 +34,20 @@ export const Welcome = () => {
             djur och natur och även gårdsmålningar på beställning.
           </p>
 
+          <img src={cow} alt='Kor på en äng' className='painting-welcomepage' />
           <img
-            src={cow}
-            alt='Children and cows'
+            src={family}
+            alt='Människor framför en ladugård'
             className='painting-welcomepage'
           />
-          <img src={family} alt='Family' className='painting-welcomepage' />
-          <img src={fox} alt='Fox' className='painting-welcomepage' />
+          <img
+            src={fox}
+            alt='En räv lurpassar på höns'
+            className='painting-welcomepage'
+          />
           <img
             src={man_in_door}
-            alt='Children and cows.'
+            alt='En man lutar sig mot en ladugårdsdörr'
             className='painting-welcomepage'
           />
           <button className='goToGalleryButton' onClick={goToGallery}>
