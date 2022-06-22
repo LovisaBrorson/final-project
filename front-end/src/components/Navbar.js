@@ -13,6 +13,7 @@ const Nav = styled.nav`
   background-color: #b4cfb0;
   margin: 0;
   z-index: 2;
+  border-bottom: solid #66806a 3px;
 
   h1 {
     font-size: 40px;
