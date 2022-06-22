@@ -100,7 +100,7 @@ article {
   align-items: center;
   height: 100vh;
   position: relative;
-  /* z-index: 100; */
+  z-index: 1;
 }
 
 .phone {

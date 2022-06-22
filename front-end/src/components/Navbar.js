@@ -12,7 +12,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   background-color: #b4cfb0;
   margin: 0;
-  z-index: 1;
+  z-index: 2;
 
   h1 {
     font-size: 40px;
