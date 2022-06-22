@@ -1,6 +1,5 @@
 import React from "react"
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
-import CookieConsent from "react-cookie-consent"
 
 import "./guestbook.css"
 
@@ -37,25 +36,6 @@ export const App = () => {
           <Route path='*' element={<Navigate to='/404' replace />} />
         </Routes>
       </BrowserRouter>
-      <CookieConsent
-        expires={1}
-        debug={true}
-        location='bottom'
-        style={{
-          background: "#b4cfb0",
-          color: " #66806a",
-          fontSize: "20px",
-        }}
-        buttonStyle={{
-          background: "#66806a",
-          color: "#fff",
-          fontSize: "20px",
-          padding: "15px",
-        }}
-        buttonText='Jag gillar kakor!'
-      >
-        Den här sidan använder små goda kakor 🍪
-      </CookieConsent>
     </>
   )
 }
