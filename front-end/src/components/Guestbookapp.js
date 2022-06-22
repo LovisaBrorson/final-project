@@ -23,6 +23,8 @@ export const Guestbookapp = () => {
     setLoading(false)
   }
 
+  // POST REQUEST, ADDING NEW GREETINGS
+
   const handleFormSubmit = (event) => {
     event.preventDefault()
     setLoading(false)
@@ -42,6 +44,8 @@ export const Guestbookapp = () => {
         setNewGreeting("")
       })
   }
+
+  // LIKES
 
   const handleLikeIncrease = (greetingId) => {
     const options = {
