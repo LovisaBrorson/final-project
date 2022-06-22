@@ -38,6 +38,7 @@ export const App = () => {
         </Routes>
       </BrowserRouter>
       <CookieConsent
+        expires={1}
         debug={true}
         location='bottom'
         style={{
@@ -52,7 +53,6 @@ export const App = () => {
           padding: "15px",
         }}
         buttonText='Jag gillar kakor!'
-        expires={10}
       >
         Den här sidan använder små goda kakor 🍪
       </CookieConsent>

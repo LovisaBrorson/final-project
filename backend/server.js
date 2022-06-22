@@ -42,7 +42,7 @@ app.get("/greetings", async (req, res) => {
   try {
     const greetings = await Greeting.find({})
       .sort({ createdAt: "desc" })
-      .limit(30)
+      .limit(25)
       .exec()
     res.status(200).json(greetings)
   } catch (error) {
