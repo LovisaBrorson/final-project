@@ -94,6 +94,7 @@ article {
   align-items: center;
   height: 100vh;
   position: relative;
+  z-index: 100;
 }
 
 .phone {
@@ -137,6 +138,10 @@ article {
   color: #064635;
   text-decoration: none;
   cursor: pointer;
+}
+
+.email:hover {
+  font-weight: bold;
 }
 
 /*CSS FOR WELCOME/HOME PAGE */
