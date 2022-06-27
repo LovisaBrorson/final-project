@@ -309,7 +309,7 @@ article {
 
 @media screen and (min-width: 425px) {
   .header_img {
-    top: -45px;
+    top: -60px;
   }
 }
 
@@ -536,7 +536,7 @@ article {
 
 @media screen and (min-width: 1200px) {
   .header_img {
-    top: -270px;
+    top: -250px;
   }
 
   .wrapper-paintings {
