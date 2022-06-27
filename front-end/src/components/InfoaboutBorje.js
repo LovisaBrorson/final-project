@@ -35,7 +35,7 @@ export const Info = () => {
 
         <p tabindex='0'>
           När vandringsleden i Hol fick en ny sträckning 2021 tecknade jag
-          bilderna till informationskyltarna längs leden. 2021 gjorde även Leif
+          bilderna till informationskyltarna längs leden. 2020 gjorde även Leif
           Brunnegård en bok om mig och gamla ting som jag illustrerade.
         </p>
 
