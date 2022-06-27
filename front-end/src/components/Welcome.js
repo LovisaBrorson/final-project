@@ -1,12 +1,12 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
+import { Cookie } from "./CookieConsent"
+
 import header_img from "../assets/borje_header_1.jpg"
 import cow from "../assets/paintings/cow.jpg"
 import family from "../assets/paintings/family.jpg"
 import fox from "../assets/paintings/Fox-1.jpg"
 import man_in_door from "../assets/paintings/man-in-the-door.jpg"
-
-import CookieConsent from "react-cookie-consent"
 
 export const Welcome = () => {
   const navigate = useNavigate()
@@ -63,25 +63,7 @@ export const Welcome = () => {
           </p>
         </div>
       </article>
-      <CookieConsent
-        debug={true}
-        location='bottom'
-        style={{
-          background: "#b4cfb0",
-          color: " #66806a",
-          fontSize: "20px",
-        }}
-        buttonStyle={{
-          background: "#66806a",
-          color: "#fff",
-          fontSize: "20px",
-          padding: "15px",
-        }}
-        buttonText='Jag gillar kakor!'
-        expires={1}
-      >
-        Den här sidan använder små goda kakor 🍪
-      </CookieConsent>
+      <Cookie />
     </div>
   )
 }
