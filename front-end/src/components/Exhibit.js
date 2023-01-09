@@ -8,7 +8,7 @@ export const Exhibit = () => {
       <div className='wrapper-exhibit'>
         <h1>UTSTÄLLNINGAR</h1>
         <p tabindex='0'>
-          <span>18-31 oktober </span>ställer Börje ut på Vårgårda bibliotekt.
+          För närvarande har jag inga aktuella utställningar / Börje
         </p>
 
         <div className='wrapper-paintings'>
