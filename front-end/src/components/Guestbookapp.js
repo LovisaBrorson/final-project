@@ -52,7 +52,7 @@ export const Guestbookapp = () => {
       method: "POST",
     }
     fetch(
-      `https://borjebrorson.herokuapp.com/greetings/${greetingId}/like`,
+      `https://finalproject-ahgn2jjgba-lz.a.run.app/greetings/${greetingId}/like`,
       options
     )
       .then((res) => res.json())
